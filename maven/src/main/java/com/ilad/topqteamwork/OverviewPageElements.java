@@ -6,28 +6,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class OverviewPageElements extends PageElements {
-		
+	
 	@FindBy(id = "tab_tasks")
 	protected WebElement tasksTab;
 	
 	//Constructor
-	public OverviewPageElements(WebDriver driver_) {
+	public OverviewPageElements(WebDriver driver_, ActionBot actionBot_) {
 		driver = driver_;
+		actionBot = actionBot_;
 		PageFactory.initElements(driver, this);
-	}
-
-	//Getter
-	public WebDriver getDriver() {
-		return driver;
-	}
-
-	//Setter
-	public void setDriver(WebDriver driver_) {
-		driver = driver_;
 	}
 	
 	public TasksPageElements clickOnTasksTabAndPassToTasksPage() {
-		tasksTab.click();
-		return new TasksPageElements(driver);
+		actionBot.clickOnButton(tasksTab);
+		return new TasksPageElements(driver, actionBot);
 	}
 }

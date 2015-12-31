@@ -12,8 +12,9 @@ public class TasksPageElements extends PageElements {
 	private WebElement addTaskListButton;
 		
 	//Constructor
-	public TasksPageElements(WebDriver driver_) {
+	public TasksPageElements(WebDriver driver_, ActionBot actionBot_) {
 		driver = driver_;
+		actionBot = actionBot_;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -28,19 +29,19 @@ public class TasksPageElements extends PageElements {
 	}
 	
 	public NewTaskListModuleElements clickOnAddTaskListButtonAndPassToNewTaskListModule() {
-		addTaskListButton.click();
-		return new NewTaskListModuleElements(driver);
+		actionBot.clickOnButton(addTaskListButton);
+		return new NewTaskListModuleElements(driver, actionBot);
 	}
 	
 	public SpecificTaskListPageElements clickOnSpecificTaskListAndPassToItsPage(String name) {
 		By specificTaskListPage = By.xpath
 				("//span[contains(text(), '" + name + "')]");
-		driver.findElement(specificTaskListPage).click();
-		return new SpecificTaskListPageElements(driver);
+		actionBot.clickOnButton(specificTaskListPage);
+		return new SpecificTaskListPageElements(driver, actionBot);
 	}
 	
 	public boolean isThisTaskListExist(String name) {
-		return !driver.findElements
-				(By.xpath("//span[contains(text(), '" + name + "')]")).isEmpty();
+		By thisTaskList = By.xpath("//span[contains(text(), '" + name + "')]");
+		return !actionBot.findElements(thisTaskList).isEmpty();
 	}
 }

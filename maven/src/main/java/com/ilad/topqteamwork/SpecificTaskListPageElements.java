@@ -15,37 +15,41 @@ public class SpecificTaskListPageElements extends PageElements {
 	private WebElement optionsButton;
 	
 	//Constructor
-	public SpecificTaskListPageElements(WebDriver driver_) {
+	public SpecificTaskListPageElements(WebDriver driver_, ActionBot actionBot_) {
 		driver = driver_;
+		actionBot = actionBot_;
 		PageFactory.initElements(driver, this);
 	}
 
-	//Getter
-	public WebDriver getDriver() {
-		return driver;
-	}
-
-	//Setter
-	public void setDriver(WebDriver driver_) {
-		driver = driver_;
-	}
-	
 	public FirstTaskModuleElements clickOnAddTheFirstTaskButtonAndPassToFirstTaskModule() {
-		addTheFirstTaskButton.click();
-		return new FirstTaskModuleElements(driver);
+		actionBot.clickOnButton(addTheFirstTaskButton);
+		return new FirstTaskModuleElements(driver, actionBot);
 	}
 	
 	public int sizeOfThisTaskList() {
-		return driver.findElements(By.xpath("//span[@class='taskName']")).size();
+		By tasksInThisTaskList = By.xpath("//span[@class='taskName']");
+		return actionBot.findElements(tasksInThisTaskList).size();
 	}
 	
 	public void clickOnOptionsButton() {
-		optionsButton.click();
+		actionBot.clickOnButton(optionsButton);
 	}
 	
-/*	public void clickOnDeleteButton() {
+	public void clickOnDeleteButton() {
+		String id = getIdOfThisTaskList();
 		By deleteButton = By.xpath
-				("//a[@href='javascript:tw.DeleteTaskList( 477127 , true )']");
-		driver.findElement(deleteButton).click();
-	}*/
+				("//a[@href='javascript:tw.DeleteTaskList( " + id + " , true )']");
+		actionBot.clickOnButton(deleteButton);
+	}
+	
+	private String getIdOfThisTaskList() {
+		By locatonOfWebElementWhichContainsTheId =
+				By.xpath("//span[@class='mid']/../..");
+		WebElement webElementWhichContainsTheId =
+				actionBot.findElement(locatonOfWebElementWhichContainsTheId);
+		String stringWhichContainsTheId =
+				webElementWhichContainsTheId.getAttribute("id");
+		return stringWhichContainsTheId.
+				substring(stringWhichContainsTheId.indexOf('4'));
+	}
 }

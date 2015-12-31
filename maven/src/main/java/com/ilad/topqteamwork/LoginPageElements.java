@@ -1,51 +1,36 @@
 package com.ilad.topqteamwork;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPageElements extends PageElements {
-
-	@FindBy(id = "userLogin")
-	private WebElement userNameTextBox;
 	
-	@FindBy(id = "password")
-	private WebElement userPasswordTextBox;
-	
-	@FindBy(id = "ordLoginSubmitBtn")
-	private WebElement loginButton;
+	By loginButton = By.id("ordLoginSubmitBtn");
 	
 	//Constructor
-	public LoginPageElements(WebDriver driver_) {
+	public LoginPageElements(WebDriver driver_, ActionBot actionBot_) {
 		driver = driver_;
+		actionBot = actionBot_;
 		PageFactory.initElements(driver, this);
-	}
-	
-	//Getter
-	public WebDriver getDriver() {
-		return driver;
-	}
-
-	//Setter
-	public void setDriver(WebDriver driver_) {
-		driver = driver_;
 	}
 
 	public void sendKeysToUserNameTextBox(String userName) {
-		userNameTextBox.sendKeys(userName);
+		By userNameTextBox = By.id("userLogin");
+		actionBot.sendKeysToTextBox(userNameTextBox, userName);
 	}
 
 	public void sendKeysToUserPasswordTextBox(String userPassword) {
-		userPasswordTextBox.sendKeys(userPassword);
+		By userPasswordTextBox = By.id("password");
+		actionBot.sendKeysToTextBox(userPasswordTextBox, userPassword);
 	}
 	
 	public OverviewPageElements clickOnLoginButtonAndPassToOverviewPage() {
-		loginButton.click();
-		return new OverviewPageElements(driver);
+		actionBot.clickOnButton(loginButton);
+		return new OverviewPageElements(driver, actionBot);
 	}
 	
 	public void clickOnLoginButtonAndStayAtLoginPage() {
-		loginButton.click();
+		actionBot.clickOnButton(loginButton);
 	}
 }
