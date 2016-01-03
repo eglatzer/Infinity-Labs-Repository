@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 
 import com.ilad.calculator.Calculator;
 
+
+
 public class TestCalculator {
 
 	Calculator calculator;
@@ -18,34 +20,34 @@ public class TestCalculator {
 		calculator = new Calculator();
 	}
 
-	@DataProvider(name = "testAddition")
+	@DataProvider(name = "dataProvider")
 	private static Object[][] intsToTest() {
 		return new Object[][] {{4, 2}, {20, -5}, {-21, 7}, {-55, -11}};
 	}
 
 	@Test(description = "Tests the method Calculator.add(x, y)",
-		  dataProvider = "testAddition")
+		  dataProvider = "dataProvider")
 	public void testAddition(Integer x, Integer y) {
 		Assert.assertEquals(calculator.add(x, y), x + y);
 	}
 
 	@Test(description = "Tests the method Calculator.subtract(x, y)",
 		  dependsOnMethods = {"testAddition"}, alwaysRun=true,
-		  dataProvider = "testAddition")
+		  dataProvider = "dataProvider")
 	public void testSubtraction(Integer x, Integer y) {
 		Assert.assertEquals(calculator.subtract(x, y), x - y);
 	}
 
 	@Test(description = "Tests the method Calculator.multiply(x, y)",
 		  dependsOnMethods = {"testSubtraction"}, alwaysRun=true,
-		  dataProvider = "testAddition")
+		  dataProvider = "dataProvider")
 	public void testMultiplication(Integer x, Integer y) {
 		Assert.assertEquals(calculator.multiply(x, y), x * y);
 	}
 
 	@Test(description = "Tests the method Calculator.divide(x, y)",
 		  dependsOnMethods = {"testMultiplication"}, alwaysRun=true,
-		  dataProvider = "testAddition")
+		  dataProvider = "dataProvider")
 	public void testDivision(Integer x, Integer y) {
 		Assert.assertEquals(calculator.divide(x, y), x / y);
 	}

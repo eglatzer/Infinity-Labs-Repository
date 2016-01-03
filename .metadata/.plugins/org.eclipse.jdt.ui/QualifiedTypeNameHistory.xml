@@ -3,4 +3,5 @@
 <fullyQualifiedTypeName name="com.ilad.topqteamwork.PageElements"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="com.ilad.topqteamwork.SomeElements"/>
+<fullyQualifiedTypeName name="com.ilad.calculator.Calculator"/>
 </qualifiedTypeNameHistroy>
