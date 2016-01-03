@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class AddTaskPageElements extends PageElements {
+public class AddTaskPageElements extends SomeElements {
 
 	//Constructor
 	public AddTaskPageElements(AndroidDriver<WebElement> driver_) {
@@ -21,7 +21,7 @@ public class AddTaskPageElements extends PageElements {
 	}
 	
 	public SpecificTaskListPageElements clickOnSaveButtonAndPassToSpecificTaskListPage() {
-		findElementByAccessibilityId("Save").click();
+		clickOnSaveButton();
 		return new SpecificTaskListPageElements(driver);
 	}
 }

@@ -1,12 +1,11 @@
 package com.ilad.topqteamwork;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class AllActivityPageElements extends PageElements {
+public class AllActivityPageElements extends SomeElements {
 	
 	//Constructor
 	public AllActivityPageElements(AndroidDriver<WebElement> driver_) {
@@ -15,8 +14,7 @@ public class AllActivityPageElements extends PageElements {
 	}
 	
 	public MenuModuleElements clickOnMenuButtonAndPassToMenuModule() {
-		By menuButton = By.className("android.widget.ImageButton");
-		clickOnButton(menuButton);
+		clickOnMenuButton();
 		return new MenuModuleElements(driver);
 	}
 }

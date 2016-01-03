@@ -17,8 +17,8 @@ public class Configuration {
 		InputStream input = null;
 		try {
 			input = new FileInputStream
-					("/home/developer/svn/Proj/src/Java/topqteamwork/src/test/"
-				   + "java/com/ilad/testtopqteamwork/config.properties");
+					("/home/developer/git/Infinity-Labs-Repository/topqteamwork/"
+				   + "src/test/java/com/ilad/testtopqteamwork/config.properties");
 			properties.load(input);
 		} catch (IOException e) {
 			e.printStackTrace();

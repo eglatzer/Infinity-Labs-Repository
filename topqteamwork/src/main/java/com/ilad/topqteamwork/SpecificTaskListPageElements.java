@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class SpecificTaskListPageElements extends PageElements {
+public class SpecificTaskListPageElements extends SomeElements {
 
 	//Constructor
 	public SpecificTaskListPageElements(AndroidDriver<WebElement> driver_) {
@@ -27,14 +27,12 @@ public class SpecificTaskListPageElements extends PageElements {
 	}
 	
 	public MenuModuleElements clickOnMenuButtonAndPassToMenuModule() {
-		By menuButton = By.className("android.widget.ImageButton");
-		clickOnButton(menuButton);
+		clickOnMenuButton();
 		return new MenuModuleElements(driver);
 	}
 	
 	public OptionsModuleElements clickOnOptionsButtonAndPassToOptionsModule() {
-		By optionsButton = By.className("android.widget.ImageView");
-		clickOnButton(optionsButton);
+		clickOnOptionsButton();
 		return new OptionsModuleElements(driver);
 	}
 	
