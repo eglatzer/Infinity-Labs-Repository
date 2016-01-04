@@ -244,3 +244,247 @@
 2016-01-04 15:01:56,989 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2016-01-04 15:01:56,990 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-01-04 15:01:56,990 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 16:55:32,445 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/developer/git/Infinity-Labs-Repository/maven
+2016-01-04 16:55:32,445 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2016-01-04 16:55:33,814 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 16:55:33,814 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/maven/src/main/resources
+2016-01-04 16:55:33,815 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 16:55:33,815 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/maven/src/test/resources
+2016-01-04 16:56:28,700 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testcalculator:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/calculator/pom.xml.
+2016-01-04 16:56:28,900 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 16:56:28,900 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 16:56:28,901 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 16:56:28,902 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 16:56:30,063 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 16:56:30,063 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 16:56:30,064 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 16:56:30,064 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:02:31,809 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:02:31,809 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:02:31,810 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:02:31,810 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:02:56,287 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:02:56,287 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:02:56,289 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:02:56,289 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:03:44,872 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:03:44,872 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:03:44,873 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:03:44,873 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:04:21,193 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:04:21,193 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:04:21,193 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:04:21,193 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:04:33,507 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:04:33,507 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:04:33,509 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:04:33,509 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:05:26,236 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:05:26,463 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: il.co.topq.auto:appium-example:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/appium-example/pom.xml.
+2016-01-04 17:05:26,613 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testcalculator:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/calculator/pom.xml.
+2016-01-04 17:05:26,633 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:topqteamwork:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/topqteamwork/pom.xml.
+2016-01-04 17:05:26,800 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /appium-example/src/main/java
+2016-01-04 17:05:26,801 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /appium-example/src/main/resources
+2016-01-04 17:05:26,801 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /appium-example/src/test/java
+2016-01-04 17:05:26,801 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /appium-example/src/test/resources
+2016-01-04 17:05:26,827 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/main/java
+2016-01-04 17:05:26,827 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/test/java
+2016-01-04 17:05:26,851 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /topqteamwork/src/main/java
+2016-01-04 17:05:26,851 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /topqteamwork/src/main/resources
+2016-01-04 17:05:26,851 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /topqteamwork/src/test/java
+2016-01-04 17:05:26,851 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /topqteamwork/src/test/resources
+2016-01-04 17:05:26,929 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:05:27,211 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:05:27,211 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:05:27,213 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:05:27,214 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:05:27,306 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:05:27,307 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:05:27,307 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:05:27,307 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:05:27,425 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:05:27,425 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:05:27,426 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:05:27,426 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:06:50,861 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:06:51,024 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testcalculator:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/calculator/pom.xml.
+2016-01-04 17:06:51,102 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/main/java
+2016-01-04 17:06:51,103 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/test/java
+2016-01-04 17:06:51,135 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:06:51,491 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:06:51,491 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:06:51,492 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:06:51,492 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:07:37,528 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:07:37,724 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: il.co.topq.auto:appium-example:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/appium-example/pom.xml.
+2016-01-04 17:07:37,860 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testcalculator:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/calculator/pom.xml.
+2016-01-04 17:07:37,877 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:topqteamwork:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/topqteamwork/pom.xml.
+2016-01-04 17:07:37,965 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /appium-example/src/main/java
+2016-01-04 17:07:37,965 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /appium-example/src/main/resources
+2016-01-04 17:07:37,965 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /appium-example/src/test/java
+2016-01-04 17:07:37,966 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /appium-example/src/test/resources
+2016-01-04 17:07:37,989 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/main/java
+2016-01-04 17:07:37,989 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/test/java
+2016-01-04 17:07:38,012 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /topqteamwork/src/main/java
+2016-01-04 17:07:38,012 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /topqteamwork/src/main/resources
+2016-01-04 17:07:38,012 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /topqteamwork/src/test/java
+2016-01-04 17:07:38,012 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /topqteamwork/src/test/resources
+2016-01-04 17:07:38,080 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:07:38,358 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:07:38,359 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:07:38,361 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:07:38,361 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:07:38,445 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:07:38,445 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:07:38,446 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:07:38,446 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:07:38,566 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:07:38,566 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:07:38,567 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:07:38,567 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:09:26,845 [Worker-30] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/developer/git/Infinity-Labs-Repository/calculator
+2016-01-04 17:09:26,845 [Worker-30] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2016-01-04 17:09:28,209 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:09:28,209 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:09:28,210 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:09:28,210 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:09:55,775 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/developer/git/Infinity-Labs-Repository/calculator
+2016-01-04 17:09:55,776 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2016-01-04 17:09:57,007 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:09:57,007 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:09:57,007 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:09:57,007 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:10:18,951 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:10:19,152 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: il.co.topq.auto:appium-example:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/appium-example/pom.xml.
+2016-01-04 17:10:19,300 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testcalculator:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/calculator/pom.xml.
+2016-01-04 17:10:19,315 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:topqteamwork:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/topqteamwork/pom.xml.
+2016-01-04 17:10:19,483 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /appium-example/src/main/java
+2016-01-04 17:10:19,483 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /appium-example/src/main/resources
+2016-01-04 17:10:19,484 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /appium-example/src/test/java
+2016-01-04 17:10:19,484 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /appium-example/src/test/resources
+2016-01-04 17:10:19,507 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/main/java
+2016-01-04 17:10:19,507 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculator/src/test/java
+2016-01-04 17:10:19,529 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /topqteamwork/src/main/java
+2016-01-04 17:10:19,529 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /topqteamwork/src/main/resources
+2016-01-04 17:10:19,529 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /topqteamwork/src/test/java
+2016-01-04 17:10:19,529 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /topqteamwork/src/test/resources
+2016-01-04 17:10:19,590 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:10:19,862 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:10:19,863 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:10:19,864 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:10:19,865 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:10:19,953 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:10:19,953 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/main/resources
+2016-01-04 17:10:19,954 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:10:19,954 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/calculator/src/test/resources
+2016-01-04 17:10:20,099 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:10:20,100 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:10:20,100 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:10:20,101 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-01-04 17:14:56,841 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sugarcrm:sugarcrm:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrm/pom.xml.
+2016-01-04 17:14:57,023 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:14:57,023 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/main/resources
+2016-01-04 17:14:57,024 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:14:57,024 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/test/resources
+2016-01-04 17:14:57,042 [Worker-34] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sugarcrm/src
+2016-01-04 17:14:57,042 [Worker-34] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrm/src/test/java because it overlaps with /sugarcrm/src
+2016-01-04 17:14:57,058 [Worker-34] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:14:57,071 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sugarcrm:sugarcrm:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrm/pom.xml.
+2016-01-04 17:14:57,154 [Worker-34] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sugarcrm/src
+2016-01-04 17:14:57,155 [Worker-34] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrm/src/test/java because it overlaps with /sugarcrm/src
+2016-01-04 17:14:57,181 [Worker-34] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:14:57,373 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:14:57,374 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/main/resources
+2016-01-04 17:14:57,374 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:14:57,375 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/test/resources
+2016-01-04 17:15:07,796 [Worker-34] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:15:07,814 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sugarcrm:sugarcrm:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrm/pom.xml.
+2016-01-04 17:15:07,859 [Worker-34] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sugarcrm/src
+2016-01-04 17:15:07,859 [Worker-34] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrm/src/test/java because it overlaps with /sugarcrm/src
+2016-01-04 17:15:07,899 [Worker-34] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:15:08,035 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:15:08,036 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/main/resources
+2016-01-04 17:15:08,036 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:15:08,037 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/test/resources
+2016-01-04 17:16:56,921 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testsugarcrm:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrm/pom.xml.
+2016-01-04 17:16:57,052 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:16:57,052 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/main/resources
+2016-01-04 17:16:57,053 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:16:57,053 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/test/resources
+2016-01-04 17:16:58,276 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:16:58,276 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/main/resources
+2016-01-04 17:16:58,277 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:16:58,277 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/test/resources
+2016-01-04 17:17:09,909 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:17:09,928 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testsugarcrm:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrm/pom.xml.
+2016-01-04 17:17:10,025 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrm/src/main/java because it overlaps with /sugarcrm/src
+2016-01-04 17:17:10,025 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrm/src/test/java because it overlaps with /sugarcrm/src
+2016-01-04 17:17:10,064 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:17:10,297 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:17:10,297 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/main/resources
+2016-01-04 17:17:10,298 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:17:10,298 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrm/src/test/resources
+2016-01-04 17:17:50,664 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sugarcrminmaven:sugarcrminmaven:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/pom.xml.
+2016-01-04 17:17:50,856 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sugarcrminmaven/src
+2016-01-04 17:17:50,859 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrminmaven/src/test/java because it overlaps with /sugarcrminmaven/src
+2016-01-04 17:17:50,879 [Worker-30] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:17:50,893 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sugarcrminmaven:sugarcrminmaven:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/pom.xml.
+2016-01-04 17:17:51,019 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sugarcrminmaven/src
+2016-01-04 17:17:51,020 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrminmaven/src/test/java because it overlaps with /sugarcrminmaven/src
+2016-01-04 17:17:51,031 [Worker-30] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:17:51,198 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:17:51,199 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/src/main/resources
+2016-01-04 17:17:51,199 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:17:51,199 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/src/test/resources
+2016-01-04 17:19:12,700 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:sugarcrminmaven:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/pom.xml.
+2016-01-04 17:19:12,866 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:19:12,866 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/src/main/resources
+2016-01-04 17:19:12,866 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:19:12,866 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/src/test/resources
+2016-01-04 17:19:14,104 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:19:14,104 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/src/main/resources
+2016-01-04 17:19:14,104 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:19:14,104 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/src/test/resources
+2016-01-04 17:19:19,765 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:19:19,777 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:sugarcrminmaven:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/pom.xml.
+2016-01-04 17:19:19,892 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrminmaven/src/main/java because it overlaps with /sugarcrminmaven/src
+2016-01-04 17:19:19,893 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sugarcrminmaven/src/test/java because it overlaps with /sugarcrminmaven/src
+2016-01-04 17:19:19,944 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:19:20,123 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:19:20,123 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/src/main/resources
+2016-01-04 17:19:20,123 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:19:20,123 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/sugarcrminmaven/src/test/resources
+2016-01-04 17:19:39,737 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: topqteamworkinweb:topqteamworkinweb:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/pom.xml.
+2016-01-04 17:19:39,938 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /topqteamworkinweb/src
+2016-01-04 17:19:39,938 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /topqteamworkinweb/src/test/java because it overlaps with /topqteamworkinweb/src
+2016-01-04 17:19:39,955 [Worker-25] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:19:39,967 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: topqteamworkinweb:topqteamworkinweb:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/pom.xml.
+2016-01-04 17:19:40,070 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /topqteamworkinweb/src
+2016-01-04 17:19:40,070 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /topqteamworkinweb/src/test/java because it overlaps with /topqteamworkinweb/src
+2016-01-04 17:19:40,082 [Worker-25] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:19:40,265 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:19:40,265 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/main/resources
+2016-01-04 17:19:40,265 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-04 17:19:40,266 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/test/resources
+2016-01-04 17:21:37,080 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testtopqteamwork:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/pom.xml.
+2016-01-04 17:21:37,227 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:21:37,228 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/main/resources
+2016-01-04 17:21:37,228 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:21:37,228 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/test/resources
+2016-01-04 17:21:38,435 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:21:38,435 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/main/resources
+2016-01-04 17:21:38,437 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:21:38,438 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/test/resources
+2016-01-04 17:22:02,848 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:22:02,848 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/main/resources
+2016-01-04 17:22:02,849 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:22:02,849 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/test/resources
+2016-01-04 17:22:10,492 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-04 17:22:10,524 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ilad:testtopqteamwork:0.0.1-SNAPSHOT @ /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/pom.xml.
+2016-01-04 17:22:10,621 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /topqteamworkinweb/src/main/java because it overlaps with /topqteamworkinweb/src
+2016-01-04 17:22:10,621 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /topqteamworkinweb/src/test/java because it overlaps with /topqteamworkinweb/src
+2016-01-04 17:22:10,656 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-01-04 17:22:10,869 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:22:10,869 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/main/resources
+2016-01-04 17:22:10,869 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-01-04 17:22:10,869 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/developer/git/Infinity-Labs-Repository/topqteamworkinweb/src/test/resources
