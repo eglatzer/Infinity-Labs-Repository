@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ilad.teststopqteamwork&apos; to &apos;com.ilad.testtopqteamwork&apos;&#x0A;- Original project: &apos;topqteamworkinweb&apos;&#x0A;- Original element: &apos;topqteamworkinweb/src/com.ilad.teststopqteamwork&apos;&#x0A;- Renamed element: &apos;topqteamworkinweb/src/com.ilad.testtopqteamwork&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ilad.teststopqteamwork&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.ilad.teststopqteamwork" name="com.ilad.testtopqteamwork" qualified="false" references="true" stamp="1451920922568" textual="false" version="1.0"/>
+</session>
