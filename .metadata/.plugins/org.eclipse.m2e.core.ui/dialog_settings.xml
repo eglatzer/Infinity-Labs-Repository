@@ -25,4 +25,21 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="topqteamworkinweb"/>
+			<item value="sugarcrminmaven"/>
+			<item value="sugarcrm"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="topqteamworkinweb"/>
+			<item value="sugarcrminmaven"/>
+			<item value="sugarcrm"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 </section>
