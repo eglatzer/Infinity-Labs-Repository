@@ -1,0 +1,12 @@
+package com.ilad.palindrome;
+
+public class Palindrome {
+	public static boolean isPalindrome(String arg) {
+		Assert.assertTrue()
+		
+		String trimmed = arg.trim().toLowerCase();
+		if(trimmed.length() < 3) {
+			return trimmed.charAt(0) == trimmed.charAt(trimmed.length() - 1);
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package stack;
+
+protected class Node {
+	
+	private Object data;
+	private Node next;
+	
+	
+}

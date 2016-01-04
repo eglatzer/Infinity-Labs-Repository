@@ -1,0 +1,28 @@
+package com.ilad.stack;
+
+protected class Node {
+	
+	private Object data;
+	private Node next;
+	
+	protected Node() {
+		data = null;
+		next = null;
+	}
+
+	public Object getData() {
+		return data;
+	}
+
+	public void setData(Object data_) {
+		data = data_;
+	}
+
+	public Node getNext() {
+		return next;
+	}
+
+	public void setNext(Node next_) {
+		next = next_;
+	}
+}
