@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SugarCrmInMaven.java&apos; to &apos;sugarcrmmavenflat/src/test/java/com.ilad.sugarcrminmaven&apos;&#x0A;- Original project: &apos;sugarcrminmaven&apos;&#x0A;- Destination element: &apos;sugarcrmmavenflat/src/test/java/com.ilad.sugarcrminmaven&apos;&#x0A;- Original element: &apos;SugarCrmInMaven.java&apos;" description="Copy file" destination="=sugarcrmmavenflat/src\/test\/java&lt;com.ilad.sugarcrminmaven" element1="src/com/ilad/sugarcrminmaven/SugarCrmInMaven.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1451982568058" units="0" version="1.0"/>
+</session>
