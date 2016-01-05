@@ -4,9 +4,18 @@ import java.util.Scanner;
 
 public class Palindrome {
 	private static Scanner scan;
+	private static boolean isFirstTime;
 
 	public static boolean isPalindrome(String arg) {
-		String trimmed = arg.trim().toLowerCase();
+		String trimmed;
+		
+		if(isFirstTime) {
+			isFirstTime = false;
+			trimmed = arg.trim().toLowerCase();
+		}
+		else {
+			trimmed = arg.trim();
+		}
 		
 		if(2 > trimmed.length()) {
 			return true;
@@ -28,6 +37,7 @@ public class Palindrome {
 				isStop = true;
 				break;
 			}
+			isFirstTime = true;
 			if(isPalindrome(arg)) {
 				System.out.println("The string: '" + arg + "' is a palindrome");
 			}
