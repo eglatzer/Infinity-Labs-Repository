@@ -1,0 +1,21 @@
+package com.ilad.observer;
+
+import java.util.Date;
+
+public class Message {
+	String str;
+	Date date;
+	private static int numOfWatchers;
+	@Override
+	public String toString() {
+		return "Message [str = " + str + ", date = " + date + "]";
+	}
+	public Message() {
+
+	}
+	public Message(String str, Date date) {
+		++numOfWatchers;
+		this.str = str;
+		this.date = date;
+	}
+}
