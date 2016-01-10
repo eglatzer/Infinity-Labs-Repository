@@ -1,0 +1,5 @@
+package com.ilad.circularbuffer;
+
+public class Consumer {
+
+}

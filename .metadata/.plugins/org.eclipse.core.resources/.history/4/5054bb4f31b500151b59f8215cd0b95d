@@ -1,0 +1,53 @@
+package com.ilad.testcircularbuffer;
+
+import org.testng.annotations.Test;
+import javax.crypto.IllegalBlockSizeException;
+
+import org.testng.annotations.BeforeMethod;
+
+import com.ilad.circularbuffer.CircularBuffer;
+import com.ilad.circularbuffer.ProtectedCircularBuffer;
+
+public class TestCircularBuffer {	
+	
+	private Integer[] outerBufferProducer;
+	private Integer[] outerBufferConsumer;
+	
+	@BeforeMethod
+	circularBuffer = new ProtectedCircularBuffer<Integer>(13); 
+	
+	@Test
+	public void test() throws IllegalBlockSizeException {
+		Integer[] outerBufferFrom = new Integer[]
+				{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17};
+		Integer[] outerBufferTo = new Integer[15];
+		
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.write(outerBufferFrom, 13);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.read(outerBufferTo, 4);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.write(outerBufferFrom, 2);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.read(outerBufferTo, 10);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.write(outerBufferFrom, 3);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.write(outerBufferFrom, 4);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.write(outerBufferFrom, 5);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.read(outerBufferTo, 6);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.write(outerBufferFrom, 4);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.read(outerBufferTo, 4);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.read(outerBufferTo, 5);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.write(outerBufferFrom, 11);
+		circularBuffer.printCircularBufferContent();
+		circularBuffer.read(outerBufferTo, 5);
+		circularBuffer.printCircularBufferContent();
+	}
+}

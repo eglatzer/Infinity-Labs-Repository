@@ -1,0 +1,55 @@
+package com.ilad.testcircularbuffer;
+
+import javax.crypto.IllegalBlockSizeException;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.ilad.circularbuffer.CircularBuffer;
+
+public class TestCircularBuffer {	
+	@Test
+	public void test() throws IllegalBlockSizeException {
+		CircularBuffer<Integer> circularBuffer = new CircularBuffer<>(13);
+		Integer[] outerBufferFrom = new Integer[]
+				{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17};
+		Integer[] outerBufferTo = new Integer[15];
+		System.out.println(circularBuffer);
+		circularBuffer.write(outerBufferFrom, 13);
+		System.out.println(circularBuffer);
+		circularBuffer.read(outerBufferTo, 4);
+		Assert.assertTrue(1 == outerBufferTo[0]);
+		Assert.assertTrue(null == outerBufferTo[4]);
+		circularBuffer.write(outerBufferFrom, 2);
+		circularBuffer.read(outerBufferTo, 10);
+		Assert.assertTrue(5 == outerBufferTo[0]);
+		Assert.assertTrue(1 == outerBufferTo[9]);
+		Assert.assertTrue(null == outerBufferTo[10]);
+		circularBuffer.write(outerBufferFrom, 3);
+		circularBuffer.write(outerBufferFrom, 4);
+		circularBuffer.write(outerBufferFrom, 5);
+		Assert.assertEquals(circularBuffer.getMemFree(), 0);
+		Assert.assertEquals(circularBuffer.getMemUsed(), 13);
+		Assert.assertEquals(circularBuffer.getMemCapacity(), 13);
+		circularBuffer.read(outerBufferTo, 6);
+		Assert.assertEquals(circularBuffer.getMemFree(), 6);
+		Assert.assertEquals(circularBuffer.getMemUsed(), 7);
+		Assert.assertEquals(circularBuffer.getMemCapacity(), 13);
+		Assert.assertTrue(2 == outerBufferTo[0]);
+		Assert.assertTrue(2 == outerBufferTo[5]);
+		circularBuffer.write(outerBufferFrom, 4);
+		circularBuffer.read(outerBufferTo, 4);
+		Assert.assertTrue(3 == outerBufferTo[0]);
+		Assert.assertTrue(2 == outerBufferTo[3]);
+		circularBuffer.read(outerBufferTo, 5);
+		Assert.assertTrue(3 == outerBufferTo[0]);
+		Assert.assertTrue(2 == outerBufferTo[4]);
+		Assert.assertEquals(circularBuffer.getMemFree(), 11);
+		Assert.assertEquals(circularBuffer.getMemUsed(), 2);
+		Assert.assertEquals(circularBuffer.getMemCapacity(), 13);
+		circularBuffer.write(outerBufferFrom, 11);
+		circularBuffer.read(outerBufferTo, 5);
+		Assert.assertTrue(3 == outerBufferTo[0]);
+		Assert.assertTrue(3 == outerBufferTo[4]);
+	}
+}

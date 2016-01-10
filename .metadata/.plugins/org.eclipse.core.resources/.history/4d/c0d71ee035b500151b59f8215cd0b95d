@@ -1,0 +1,24 @@
+package com.ilad.circularbuffer;
+
+public class Producer implements Runnable {
+	private ProtectedCircularBuffer<Integer> circularBuffer;
+	private Integer[] producer;
+	private long waiting;
+
+	// Constructor
+	public Producer(ProtectedCircularBuffer<Integer> circularBuffer_, Integer[] producer_, long waiting_) {
+		circularBuffer = circularBuffer_;
+		producer = producer_;
+		waiting = waiting_;
+	}
+
+	@Override
+	public void run() {
+		circularBuffer.write(producer, producer.length);
+		try {
+			Thread.sleep(waiting);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}

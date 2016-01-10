@@ -1,0 +1,29 @@
+package com.ilad.testcircularbuffer;
+
+import javax.crypto.IllegalBlockSizeException;
+
+import org.testng.annotations.Test;
+
+import com.ilad.circularbuffer.Consumer;
+import com.ilad.circularbuffer.Producer;
+import com.ilad.circularbuffer.ProtectedCircularBuffer;
+
+public class TestCircularBuffer {
+	private ProtectedCircularBuffer<Integer> circularBuffer = new ProtectedCircularBuffer<>(13);
+	private Integer[] outerBufferProducer = new Integer[]{1, 2, 3, 4, 5};
+	private Integer[] outerBufferConsumer = new Integer[3];
+	private Producer producer = new Producer(circularBuffer, outerBufferProducer, 9, 3000);
+	private Consumer consumer = new Consumer(circularBuffer, outerBufferConsumer, 5, 5000);
+	
+	// Constructor
+	public TestCircularBuffer() throws IllegalBlockSizeException {
+
+	}
+	
+	@Test
+	public void test() throws IllegalBlockSizeException {
+		producer.start();
+		consumer.start();
+		
+	}
+}

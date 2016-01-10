@@ -1,0 +1,61 @@
+package com.ilad.pair;
+
+public class Pair<K, V> {
+	private K key;
+	private V value;
+	
+	// Constructor
+	public Pair(K key_, V value_) {
+		key = key_;
+		value = value_;
+	}
+
+	// Getters and Setters
+	public K getKey() {
+		return key;
+	}
+
+	public void setKey(K key_) {
+		key = key_;
+	}
+
+	public V getValue() {
+		return value;
+	}
+
+	public void setValue(V value_) {
+		value = value_;
+	}
+
+	// Equals Method
+	public boolean equals(Pair<K, V> obj) {
+		if(this == obj)
+			return true;
+		if(obj == null)
+			return false;
+		if(getClass() != obj.getClass())
+			return false;
+		if(key == null) {
+			if(obj.key != null)
+				return false;
+		} else if(!key.equals(obj.key))
+			return false;
+		if(value == null) {
+			if(obj.value != null)
+				return false;
+		} else if(!value.equals(obj.value))
+			return false;
+		return true;
+	}
+	
+	// CompareTo Method
+	public <V extends Number> double compareTo(Pair<K, V> obj) {
+		if(value > obj.value) {
+			return 1;
+		}
+		if(value < obj.value) {
+			return -1;
+		}
+		return 0;
+	}
+}

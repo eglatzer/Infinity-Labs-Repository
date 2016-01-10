@@ -1,0 +1,12 @@
+package com.ilad.circularbuffer;
+
+import javax.crypto.IllegalBlockSizeException;
+
+public class SynchronizedCircularBufferWithTwoMutexes <E> extends CircularBuffer<E> {
+
+	public SynchronizedCircularBufferWithTwoMutexes(int memCapacity_) throws IllegalBlockSizeException {
+		super(memCapacity_);
+		// TODO Auto-generated constructor stub
+	}
+
+}

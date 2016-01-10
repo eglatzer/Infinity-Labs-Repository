@@ -1,0 +1,20 @@
+package com.ilad.circularbuffer;
+
+import javax.crypto.IllegalBlockSizeException;
+
+public class CircularBuffer<E> {
+	private E[] cBuffer;
+	private long memoryCapacity;
+	private long readIndex = 0;
+	private long writeIndex = 0;
+	//Constructor
+	public CircularBuffer(long memoryCapacity_) {
+		if(0 >= memoryCapacity_) {
+			throw new IllegalBlockSizeException
+					("memoryCapacity_ should be bigger than 0!");
+		}
+		cBuffer = new E[memoryCapacity_];
+		memoryCapacity = memoryCapacity_;
+	}
+	
+}

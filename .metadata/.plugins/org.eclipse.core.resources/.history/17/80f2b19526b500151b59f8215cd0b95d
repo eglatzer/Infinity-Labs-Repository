@@ -1,0 +1,39 @@
+package com.ilad.circularbuffer;
+
+import javax.crypto.IllegalBlockSizeException;
+
+public class ProtectedCircularBuffer<E> extends CircularBuffer<E> {
+	private volatile boolean isBusy = false;
+
+	// Constructor
+	public ProtectedCircularBuffer(int memCapacity_) throws IllegalBlockSizeException {
+		super(memCapacity_);
+	}
+
+	// Other Methods
+	@Override
+	public boolean read(E[] outerBuffer, int memToRead) {
+		while (isBusy) {
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		isBusy = true;
+		return super.read(outerBuffer, memToRead);
+	}
+
+	@Override
+	public boolean write(E[] outerBuffer, int memToWrite) {
+		while (isBusy) {
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		isBusy = true;
+		return super.write(outerBuffer, memToWrite);
+	}
+}

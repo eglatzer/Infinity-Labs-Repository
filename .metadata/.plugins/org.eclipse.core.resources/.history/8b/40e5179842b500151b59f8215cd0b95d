@@ -1,0 +1,29 @@
+package com.ilad.circularbuffer;
+
+public class Consumer extends Thread {
+	private ProtectedCircularBuffer<Integer> circularBuffer;
+	private Integer[] consumer;
+	private int times;
+	private long waiting;
+
+	// Constructor
+	public Consumer(ProtectedCircularBuffer<Integer> circularBuffer_, Integer[] consumer_, int times_, long waiting_) {
+		circularBuffer = circularBuffer_;
+		consumer = consumer_;
+		times = times_;
+		waiting = waiting_;
+	}
+
+	@Override
+	public void run() {
+		for(int i = 0; i < times; ++i) {
+			System.out.print("Consumer number " + i + ": ");
+			circularBuffer.read(consumer, consumer.length);
+			try {
+				Thread.sleep(waiting);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package com.ilad.circularbuffer;
+
+import javax.crypto.IllegalBlockSizeException;
+
+public class ProtectedCircularBuffer<E> extends CircularBuffer<E>{
+
+	public ProtectedCircularBuffer(int memCapacity_) throws IllegalBlockSizeException {
+		super(memCapacity_);
+	}
+	
+}

@@ -1,0 +1,71 @@
+package com.ilad.circularbuffer;
+
+import java.lang.instrument.IllegalClassFormatException;
+import java.lang.reflect.Array;
+
+import javax.crypto.IllegalBlockSizeException;
+
+public class CircularBuffer<E> {
+	private E[] cBuffer;
+	private int memoryCapacity;
+	private int memoryUsed = 0;
+	private int readIndex = 0;
+	//Constructor
+	public CircularBuffer(Class<E[]> typeOfElements, int memoryCapacity_) throws IllegalBlockSizeException {
+		if(0 >= memoryCapacity_) {
+			throw new IllegalBlockSizeException("memoryCapacity_ should be bigger than 0!");
+		}
+		cBuffer = typeOfElements.cast(Array.newInstance(typeOfElements.getComponentType(), memoryCapacity_));
+		memoryCapacity = memoryCapacity_;
+	}
+	//Getters
+	public E[] getCBuffer() {
+		return cBuffer;
+	}
+	public int getMemoryCapacity() {
+		return memoryCapacity;
+	}
+	public int getMemoryUsed() {
+		return memoryUsed;
+	}
+	public int getMemoryFree() {
+		return memoryCapacity - memoryUsed;
+	}
+	public int getReadIndex() {
+		return readIndex;
+	}
+	public int getWriteIndex() {
+		return (readIndex + memoryUsed) % memoryCapacity;
+	}
+	//Other Methods
+	public int read(E[] outerBuffer, int memorySizeToRead) throws IllegalClassFormatException {
+		if(outerBuffer.getClass() != cBuffer.getClass()) {
+			throw new IllegalClassFormatException("outerBuffer and cBuffer aren't from the same class");
+		}
+		if(memorySizeToRead > memoryUsed || memorySizeToRead > outerBuffer.length) {
+			return 0;
+		}
+		int counter = 0;
+		for(int i = 0; i < memorySizeToRead; ++i) {
+			outerBuffer[i] = cBuffer[readIndex];
+			++counter;
+			--memoryUsed;
+			readIndex = (readIndex + 1) % memoryCapacity;
+		}
+		return counter;
+	}
+	public int write(E[] outerBuffer, int memorySizeToWrite) throws IllegalClassFormatException {
+		if(outerBuffer.getClass() != cBuffer.getClass()) {
+			throw new IllegalClassFormatException("outerBuffer and cBuffer aren't from the same class");
+		}
+		if(memorySizeToWrite > getMemoryFree() || memorySizeToWrite > outerBuffer.length) {
+			return 0;
+		}
+		int counter = 0;
+		for(int i = 0; i < memorySizeToWrite; ++i) {
+			cBuffer[getWriteIndex()] = outerBuffer[i];
+			++counter;
+			++memoryUsed;
+		}
+	}
+}

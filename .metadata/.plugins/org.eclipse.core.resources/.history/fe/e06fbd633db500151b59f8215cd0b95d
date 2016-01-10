@@ -1,0 +1,30 @@
+package com.ilad.circularbuffer;
+
+public class Producer extends Thread {
+	private ProtectedCircularBuffer<Integer> circularBuffer;
+	private Integer[] producer;
+	private int times;
+	private long waiting;
+
+	// Constructor
+	public Producer(ProtectedCircularBuffer<Integer> circularBuffer_, Integer[] producer_, int times_, long waiting_) {
+		circularBuffer = circularBuffer_;
+		producer = producer_;
+		times = times_;
+		waiting = waiting_;
+	}
+
+	@Override
+	public void run() {
+		for(int i = 0; i < times; ++i) {
+			System.out.print("Producer number " + i + ": ");
+			circularBuffer.write(producer, producer.length);
+			circularBuffer.printCircularBufferContent();
+			try {
+				Thread.sleep(waiting);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

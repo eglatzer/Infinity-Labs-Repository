@@ -1,0 +1,18 @@
+package com.ilad.circularbuffer;
+
+import javax.crypto.IllegalBlockSizeException;
+
+public class SynchronizedCircularBufferWithOneMutex<E> extends CircularBuffer<E>{
+
+	// Constructor
+	public SynchronizedCircularBufferWithOneMutex(int memCapacity_) throws IllegalBlockSizeException {
+		super(memCapacity_);
+	}
+	
+	// Other Methods
+	@Override
+	synchronized public boolean read(E outerBuffer) {
+		
+	}
+
+}
