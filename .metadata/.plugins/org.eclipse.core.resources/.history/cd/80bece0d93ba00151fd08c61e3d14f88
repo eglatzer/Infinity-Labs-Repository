@@ -1,0 +1,7 @@
+package com.ilad.sumpairoutofarray;
+
+import java.util.ArrayList;
+
+public class SumPairOutOfArray {
+	
+}

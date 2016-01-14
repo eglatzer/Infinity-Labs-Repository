@@ -1,0 +1,41 @@
+package com.ilad.sumpairoutofarray;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+public class SumPairOutOfArray {
+	public static int first;
+	public static int second;
+	
+	public static void findPairWhichSum(ArrayList<Integer> array, int sum) {
+		int i;
+		int length = array.size();
+		Hashtable<Integer, Integer> table = new Hashtable<>();
+		for(i = 0; i < length; ++i) {
+			table.put(sum - array.get(i), array.get(i));
+		}
+		for(i = 0; i < length; ++i) {
+			if(table.containsKey(array.get(i))) {
+				first = array.get(i);
+				second = table.get(array.get(i));
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		ArrayList<Integer> array = new ArrayList<>();
+		int sum = 20;
+		array.add(-5);
+		array.add(7);
+		array.add(13);
+		array.add(-2);
+		array.add(16);
+		array.add(4);
+		array.add(-4);
+		array.add(24);
+		array.add(15);
+		array.add(15);
+		SumPairOutOfArray.findPairWhichSum(array, sum);
+		System.out.println("first = " + first + ", second = " + second);
+	}
+}

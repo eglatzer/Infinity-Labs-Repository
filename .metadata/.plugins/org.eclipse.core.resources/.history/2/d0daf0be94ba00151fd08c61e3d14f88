@@ -1,0 +1,13 @@
+package com.ilad.sumpairoutofarray;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+public class SumPairOutOfArray {
+	public static void findPairWhichSum(Array array, int sum) {
+		int i;
+		Hashtable<Integer, Integer> table = new Hashtable<>();
+		for(i = 0; i < array)
+	}
+}
