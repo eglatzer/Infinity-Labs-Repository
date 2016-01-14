@@ -16,7 +16,7 @@ public class SumPairOutOfArray {
 			table.put(sum - array.get(i), i);
 		}
 		for(i = 0; i < length; ++i) {
-			if(table.containsKey(array.get(i)) && table.get(array.get(i)) != i) {
+			if(null != table.get(array.get(i)) && table.get(array.get(i)) != i) {
 				first = array.get(i);
 				second = array.get(table.get(array.get(i)));
 			}
