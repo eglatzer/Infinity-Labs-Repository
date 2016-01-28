@@ -27,32 +27,32 @@ public class SynchronizedCircularBufferWithTwoMutexes <E> extends CircularBuffer
 	// Other Methods
 	@Override
 	public boolean read(E outerBuffer) {
-		try {
-			readSemaphore.acquire();
-		} catch(InterruptedException e) {
-			e.printStackTrace();
-		}
 		synchronized(readMutex) {
+			try {
+				readSemaphore.acquire();
+			} catch(InterruptedException e) {
+				e.printStackTrace();
+			}
 			outerBuffer = circularBuffer[readIndex];
 			--memUsed;
 			readIndex = (readIndex + 1) % memCapacity;
+			writeSemaphore.release();
+			return true;
 		}
-		writeSemaphore.release();
-		return true;
 	}
 	
 	@Override
 	public boolean write(E outerBuffer) {
-		try {
-			writeSemaphore.acquire();
-		} catch(InterruptedException e) {
-			e.printStackTrace();
-		}
 		synchronized(writeMutex) {
+			try {
+				writeSemaphore.acquire();
+			} catch(InterruptedException e) {
+				e.printStackTrace();
+			}
 			circularBuffer[getWriteIndex()] = outerBuffer;
 			++memUsed;
+			readSemaphore.release();
+			return true;
 		}
-		readSemaphore.release();
-		return true;
 	}
 }

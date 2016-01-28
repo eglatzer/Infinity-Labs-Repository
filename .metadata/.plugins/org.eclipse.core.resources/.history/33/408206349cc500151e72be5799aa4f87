@@ -3,10 +3,10 @@ package com.ilad.circularbuffer;
 import javax.crypto.IllegalBlockSizeException;
 
 public class CircularBuffer<E> {
-	protected volatile E[] circularBuffer;
+	protected E[] circularBuffer;
 	protected int memCapacity;
-	protected volatile int memUsed = 0;
-	protected volatile int readIndex = 0;
+	protected int memUsed = 0;
+	protected int readIndex = 0;
 
 	// Constructor
 	@SuppressWarnings("unchecked")
