@@ -10,6 +10,7 @@ public class SynchronizedCircularBufferWithTwoMutexes <E> extends CircularBuffer
 	private Object readMutex;
 	private Object writeMutex;
 
+	// Constructor
 	public SynchronizedCircularBufferWithTwoMutexes(int memCapacity_) throws IllegalBlockSizeException {
 		super(memCapacity_);
 		readSemaphore = new Semaphore(memCapacity);
