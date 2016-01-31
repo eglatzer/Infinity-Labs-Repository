@@ -1,0 +1,23 @@
+package com.ilad.findnumberinarray;
+
+public class FindNumberInArray {
+	public static int findNumber(int[] array, int numberToFind) {
+		int length = array.length;
+		boolean isFound = false;
+		
+		if(array[length - 1] == numberToFind) {
+			isFound = true;
+		}
+		int temp = array[length - 1];
+		array[length - 1] = numberToFind;
+		int i = 0;
+		while(numberToFind != array[i]) {
+			++i;
+		}
+		array[length - 1] = temp;
+		if(length - 1 == i && !isFound) {
+			return length;
+		}
+		return i;
+	}
+}

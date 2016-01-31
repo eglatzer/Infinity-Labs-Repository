@@ -1,9 +1,0 @@
-package com.ilad.sumpairoutofarray;
-
-import java.util.ArrayList;
-
-public class SumPairOutOfArray {
-	public void findPairWhichSum(ArrayList<Integer>, int sum) {
-		
-	}
-}
