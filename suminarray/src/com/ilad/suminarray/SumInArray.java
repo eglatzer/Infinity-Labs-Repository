@@ -24,7 +24,7 @@ public class SumInArray {
 	public int getSum() {
 		return sum;
 	}
-	public void setRank(int sum_) {
+	public void setSum(int sum_) {
 		sum = sum_;
 	}
 	

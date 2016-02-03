@@ -1,0 +1,9 @@
+package com.ilad.memadmin;
+
+public class MainTest {
+	public static void main(String[] args) {
+		final int SIZE = 10;
+		MemAdmin memAdmin = new MemAdmin(SIZE);
+		memAdmin.setAll(4);
+	}	
+}

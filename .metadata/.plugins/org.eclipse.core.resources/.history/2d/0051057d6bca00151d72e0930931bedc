@@ -1,0 +1,32 @@
+package com.ilad.memadmin;
+
+import java.util.Date;
+
+public class MemAdmin {
+	private final int SIZE;
+	private int[] arrayOfVals;
+	private Date[] arrayOfTimes;
+	
+	// Constructor
+	public MemAdmin(int size) {
+		SIZE = size;
+		arrayOfVals = new int[SIZE + 1];
+		arrayOfTimes = new Date[SIZE + 1];
+	}
+	
+	public void setVal(int index, int val) {
+		arrayOfTimes[index] = new Date();
+		arrayOfVals[index] = val;
+	}
+	
+	public void setAll(int val) {
+		arrayOfTimes[SIZE] = new Date();
+		arrayOfVals[SIZE] = val;
+	}
+	
+	public int getVal(int index) {
+		int val = (0 < arrayOfTimes[index].compareTo(arrayOfTimes[SIZE]) ?
+				arrayOfVals[index] : arrayOfVals[SIZE]);
+		return val;
+	}
+}
