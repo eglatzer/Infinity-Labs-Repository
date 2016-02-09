@@ -2,8 +2,15 @@ package com.ilad.singlylinkedlist;
 
 public class SinglyList {
 	private Node m_head;
+	
 	public class ListIterator {
+		// Constructor
+		public ListIterator(Node node_) {
+			m_node = node_;
+		}
+		
 		private Node m_node;
+		
 		public Object getData() {
 			if(m_node == null)
 			{
@@ -11,22 +18,21 @@ public class SinglyList {
 			}
 			return m_node.m_data;
 		}
-		public ListIterator(Node node_) {
-			m_node = node_;
-		}
+		
 		public ListIterator goNext() {
-			assert(m_head == null);
 			return new ListIterator(m_head.m_next);
 		}
 	}
 	
 	private class Node {
-		private Object m_data;
-		private Node m_next;
+		// Constructor
 		public Node(Object data_, Node next_) {
 			m_data = data_;
 			m_next = next_;
 		}
+		
+		private Object m_data;
+		private Node m_next;
 	}
 	
 	public void pushFront(Object data_) {
@@ -58,6 +64,7 @@ public class SinglyList {
 		}
 		return counter;
 	}
+	
 	public ListIterator find(Object data_) {
 		Node curr = m_head;
 		while(curr != null)

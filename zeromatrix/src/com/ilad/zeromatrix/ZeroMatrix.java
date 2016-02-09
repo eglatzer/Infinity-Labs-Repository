@@ -2,6 +2,8 @@ package com.ilad.zeromatrix;
 
 import java.util.Random; //column
 
+import org.apache.xpath.operations.String;
+
 public class ZeroMatrix {
 	public static void zeroMatrix(int[][] matrix) {
 		boolean isRowZero = false;

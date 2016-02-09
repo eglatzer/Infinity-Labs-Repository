@@ -1,0 +1,5 @@
+package com.ilad.singlylinkedlist;
+
+public class GenericSinglyList<E> {
+
+}
