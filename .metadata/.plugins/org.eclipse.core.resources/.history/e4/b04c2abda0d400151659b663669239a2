@@ -1,0 +1,9 @@
+package com.ilad.printobject;
+
+public class Person {
+	private int idNumber;
+	private Name name;
+	private Date dateOfBirth;
+	private Sex sex;
+	
+}

@@ -1,0 +1,39 @@
+package com.ilad.printobject;
+
+public class Date {
+	byte day;
+	byte month;
+	byte year;
+	
+	// Constructor
+	public Date(byte day_, byte month_, byte year_) {
+		day = day_;
+		month = month_;
+		year = year_;
+	}
+
+	// Getters and Setters
+	public byte getDay() {
+		return day;
+	}
+
+	public void setDay(byte day_) {
+		day = day_;
+	}
+
+	public byte getMonth() {
+		return month;
+	}
+
+	public void setMonth(byte month_) {
+		month = month_;
+	}
+
+	public byte getYear() {
+		return year;
+	}
+
+	public void setYear(byte year_) {
+		year = year_;
+	}
+}

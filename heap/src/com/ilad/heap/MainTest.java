@@ -5,7 +5,7 @@ import java.util.Random;
 public class MainTest {
 
 	public static void main(String[] args) {
-		final int LENGTH = 6;
+		final int LENGTH = 15;
 		final int RANGE = 100;
 		int i;
 		Random random = new Random();
@@ -58,5 +58,20 @@ public class MainTest {
 		System.out.println("maxHeap.isempty() = " + maxHeap.isEmpty());
 		System.out.println("minHeap.size() = " + minHeap.size());
 		System.out.println("maxHeap.size() = " + maxHeap.size());
+		
+		HeapSort<Integer> heapS = new HeapSort<>();
+		Integer[] array = new Integer[LENGTH];
+		System.out.println("Before sorting:");
+		for(i = 0; i < LENGTH; ++i) {
+			array[i] = random.nextInt(RANGE);
+			System.out.print(array[i] + " ");
+		}
+		
+		heapS.heapSort(array);
+		System.out.println();
+		System.out.println("After Heap Sort:");
+		for(Integer element : array) {
+			System.out.print(element + " ");
+		}
 	}
 }
