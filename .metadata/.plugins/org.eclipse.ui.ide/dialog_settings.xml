@@ -12,6 +12,13 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/infinity/git/Infinity-Labs-Repository/zeromatrix"/>
+			<item value="/home/infinity/git/Infinity-Labs-Repository/sugarcrmpageobjected"/>
+			<item value="/home/infinity/git/Infinity-Labs-Repository/sugarcrmmavenflat"/>
+			<item value="/home/infinity/git/Infinity-Labs-Repository/complexnumber"/>
+			<item value="/home/infinity/git/Infinity-Labs-Repository/circularbuffer"/>
+			<item value="/home/infinity/git/Infinity-Labs-Repository/calculator"/>
+			<item value="/home/infinity/git/Infinity-Labs-Repository/appium-example"/>
 			<item value="/home/developer/git/Infinity-Labs-Repository"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

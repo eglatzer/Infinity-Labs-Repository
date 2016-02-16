@@ -1,0 +1,17 @@
+package com.ilad.heap;
+
+import java.util.Random;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		Heap<Integer> minHeap = new Heap<>();
+		Heap<Integer> maxHeap = new Heap<>(false);
+		
+		System.out.println("minHeap.isMinHeap = " + minHeap.isMinHeap());
+		System.out.println("maxHeap.isMinHeap = " + maxHeap.isMinHeap());
+		
+	}
+
+}

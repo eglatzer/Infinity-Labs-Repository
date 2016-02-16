@@ -1,0 +1,10 @@
+package com.ilad.heap;
+
+public class Heap<E extends Comparable<E>> {
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

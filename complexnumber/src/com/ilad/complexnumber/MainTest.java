@@ -1,11 +1,9 @@
 package com.ilad.complexnumber;
 
-import org.apache.xpath.operations.String;
-
 public class MainTest {
-	public static void main(String args[]) {
+
+	public static void main(String[] args) {
 		System.out.println("Hello world!");
-		
 		ComplexNumber number1 = new ComplexNumber();
 		ComplexNumber number2 = new ComplexNumber(3);
 		ComplexNumber number3 = new ComplexNumber(5, 6);
@@ -65,4 +63,5 @@ public class MainTest {
 		System.out.println("equals of number8 & number8 " + number8.equals(number8));
 		System.out.println("equals of number5 & number3 " + number5.equals(number3));
 	}
+
 }

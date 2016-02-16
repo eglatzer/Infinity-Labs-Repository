@@ -1,0 +1,61 @@
+package com.ilad.sorting;
+
+import java.util.Random;
+
+public class MainTest {
+	public static void main(String[] args) {
+		Random random = new Random();
+		Sorting<Integer> sorting = new Sorting<>();
+		final int LENGTH = 15;
+		final int RANGE = 100;
+		Integer[] array = new Integer[LENGTH];
+		int i = 0;
+		System.out.println("Before sorting:");
+		for(i = 0; i < LENGTH; ++i) {
+			array[i] = random.nextInt(RANGE);
+			System.out.print(array[i] + " ");
+		}
+		sorting.bubbleSort(array);
+		System.out.println();
+		System.out.println("After Bubble Sort:");
+		for(Integer element : array) {
+			System.out.print(element + " ");
+		}
+		System.out.println();
+		System.out.println("Before sorting:");
+		for(i = 0; i < LENGTH; ++i) {
+			array[i] = random.nextInt(RANGE);
+			System.out.print(array[i] + " ");
+		}
+		sorting.insertionSort(array);
+		System.out.println();
+		System.out.println("After Insertion Sort:");
+		for(Integer element : array) {
+			System.out.print(element + " ");
+		}
+		System.out.println();
+		System.out.println("Before sorting:");
+		for(i = 0; i < LENGTH; ++i) {
+			array[i] = random.nextInt(RANGE);
+			System.out.print(array[i] + " ");
+		}
+		sorting.selectionSort(array);
+		System.out.println();
+		System.out.println("After Selection Sort:");
+		for(Integer element : array) {
+			System.out.print(element + " ");
+		}
+		System.out.println();
+		System.out.println("Before sorting:");
+		for(i = 0; i < LENGTH; ++i) {
+			array[i] = random.nextInt(RANGE);
+			System.out.print(array[i] + " ");
+		}
+		sorting.mergeSort(array, new Integer(0));
+		System.out.println();
+		System.out.println("After Merge Sort:");
+		for(Integer element : array) {
+			System.out.print(element + " ");
+		}
+	}
+}

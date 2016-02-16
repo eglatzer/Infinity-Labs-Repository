@@ -1,7 +1,6 @@
 package com.ilad.complexnumber;
 
 public class ComplexNumber {
-
 	private double m_real;
 	private double m_imagine;
 	
