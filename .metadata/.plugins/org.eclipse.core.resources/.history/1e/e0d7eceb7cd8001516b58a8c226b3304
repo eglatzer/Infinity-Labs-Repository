@@ -1,0 +1,54 @@
+package com.ilad.manipulatetree;
+
+import java.util.LinkedList;
+
+public class TreeNode {
+	public int data;
+	public TreeNode left;
+	public TreeNode right;
+	
+	// Constructor
+	public TreeNode(int data_) {
+		data = data_;
+	}
+	
+	public int findNumOfNonLeafNodes() {
+		LinkedList<TreeNode> list = new LinkedList<TreeNode>();
+		int sum = 0;
+		TreeNode node;
+		
+		list.add(this);
+		
+		while(!list.isEmpty()) {
+			node = list.pop();
+			
+			if(null != node && (null != node.left || null != node.right)) {
+				++sum;
+				list.add(node.left);
+				list.add(node.right);
+			}
+		}
+		
+		return sum;
+	}
+	
+	public void findSum(int sum) {
+		
+	}
+	
+	public static void main(String[] args) {
+		TreeNode root = new TreeNode(5);
+		root.left = new TreeNode(4);
+		root.right = new TreeNode(8);
+		root.left.left = new TreeNode(11);
+		root.right.left = new TreeNode(13);
+		root.right.right = new TreeNode(4);
+		root.left.left.left = new TreeNode(7);
+		root.left.left.right = new TreeNode(2);
+		root.right.right.left = new TreeNode(5);
+		root.right.right.right = new TreeNode(1);
+		
+		System.out.println
+			("Number of Non Leaf Nodes in root: " + root.findNumOfNonLeafNodes());
+	}
+}
