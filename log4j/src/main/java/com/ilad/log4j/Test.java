@@ -8,8 +8,8 @@ public class Test {
 	
 	public static void main(String[] args) {
 		logger.debug("This is a debug message");
-        logger.info("This is a info message");
-        logger.error("This is a error message");
-        logger.warn("This is a warn message");
+        logger.info("This is an info message");
+        logger.error("This is an error message");
+        logger.warn("This is an warn message");
 	}
 }

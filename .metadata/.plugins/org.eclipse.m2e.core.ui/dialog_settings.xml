@@ -9,9 +9,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="circularbuffer"/>
-			<item value="sugarcrmmavenflat"/>
-			<item value="sugarcrmpageobjected"/>
+			<item value="log4j"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -78,6 +76,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/infinity/git/Infinity-Labs-Repository/Log4j"/>
+			<item value="/home/infinity/git/Infinity-Labs-Repository/Labs"/>
 			<item value="/home/developer/git/Infinity-Labs-Repository/sugarcrm"/>
 			<item value="/home/developer/git/Infinity-Labs-Repository/topqteamworkinweb"/>
 		</list>
