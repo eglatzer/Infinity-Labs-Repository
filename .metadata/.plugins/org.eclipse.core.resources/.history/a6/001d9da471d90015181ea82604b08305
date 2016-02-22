@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+	<Properties>
+		<Property name="path">/home/infinity/workspace/log4j_files
+		</Property>
+	</Properties>
+
+	<Appenders>
+		<!-- write here the name and path and layout you want -->
+		<File name="A1" fileName="${path}/A1.log" append="false">
+			<PatternLayout pattern="%d{dd-MM-yy}-> [%t] %p - %m%n" />
+		</File>
+
+		<File name="A2" fileName="${path}/A2.log" append="false">
+			<PatternLayout pattern="%m%n" />
+		</File>
+    </Appenders>
+
+	<Loggers>
+		<!-- write here the the defintion to the name you written there -->
+		<Logger name="org.apache.log4j.xml" level="debug">
+			<AppenderRef ref="A1" />
+		</Logger>
+
+		<Logger name="org.apache.log4j.xml" level="info">
+			<AppenderRef ref="A2" />
+		</Logger>
+
+		<!-- add the name you created to the root -->
+		<Root level="debug">
+			<AppenderRef ref="A1" />
+			<AppenderRef ref="A2" />
+		</Root>
+	</Loggers>
+</Configuration>

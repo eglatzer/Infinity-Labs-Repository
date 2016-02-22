@@ -1,0 +1,4 @@
+22-02-16-> [main] DEBUG - This is a debug message
+22-02-16-> [main] INFO - This is a info message
+22-02-16-> [main] ERROR - This is a error message
+22-02-16-> [main] WARN - This is a warn message
