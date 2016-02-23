@@ -1,0 +1,45 @@
+package com.ilad.hanoitower;
+
+import java.util.ArrayList;
+
+public class HanoiTower {
+	private static ArrayList<Integer> source = new ArrayList<>();
+	private static ArrayList<Integer> other = new ArrayList<>();
+	private static ArrayList<Integer> destination = new ArrayList<>();
+	private static int counter = 0;
+	
+	public static void play(int size) throws Exception {
+		if(1 > size) {
+			throw new Exception("This is an illegal size!");
+		}
+		
+		for(int i = size; i > 0; --i) {
+			source.add(i);
+		}
+		
+		printStatus();
+		play(size, source, other, destination);
+	}
+	
+	private static void play(int size, ArrayList<Integer> src,
+			ArrayList<Integer> oth, ArrayList<Integer> dest) {
+		if(1 == size) {
+			int lastIndex = src.size() - 1;
+			dest.add(src.remove(lastIndex));
+			printStatus();
+			return;
+		}
+		
+		play(size - 1, src, dest, oth);
+		play(1, src, oth, dest);
+		play(size - 1, oth, src, dest);
+	}
+	
+	private static void printStatus() {
+		System.out.println(counter + ". source tower: " + source);
+		System.out.println(counter + ". other tower: " + other);
+		System.out.println(counter + ". destination tower: " + destination);
+		System.out.println();
+		++counter;
+	}
+}
