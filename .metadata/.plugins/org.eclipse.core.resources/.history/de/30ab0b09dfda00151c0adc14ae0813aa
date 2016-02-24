@@ -1,0 +1,21 @@
+package rabbitmq;
+
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+
+import java.io.IOException;
+import java.util.concurrent.TimeoutException;
+
+import com.rabbitmq.client.Channel;
+
+public class RabbitMQExperiment {
+	public static void main(String[] args) throws IOException, TimeoutException {
+		ConnectionFactory factory = new ConnectionFactory();
+		factory.setUsername("userName");
+		factory.setPassword("password");
+		factory.setVirtualHost("virtualHost");
+		factory.setHost("hostName");
+		factory.setPort(1); // portNumber
+		Connection conn = factory.newConnection();
+	}
+}

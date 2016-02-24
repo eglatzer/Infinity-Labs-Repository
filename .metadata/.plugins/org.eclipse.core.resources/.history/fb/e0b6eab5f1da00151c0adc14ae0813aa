@@ -1,0 +1,7 @@
+package rabbitmq;
+
+public class RabbitMQExperiment {
+	public static void main(String[] args) {
+	
+	}
+}
