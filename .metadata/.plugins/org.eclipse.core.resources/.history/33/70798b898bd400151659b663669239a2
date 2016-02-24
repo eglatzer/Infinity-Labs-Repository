@@ -1,5 +1,0 @@
-package com.ilad.heap;
-
-public class HeapSort<E extends Comparable<E>> {
-	
-}

@@ -1,7 +1,0 @@
-package com.ilad.subsets;
-
-public class SubSets {
-	public static void subsets(int n, int k) throws Exception {
-		
-	}
-}
