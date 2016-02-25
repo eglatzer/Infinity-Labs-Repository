@@ -19,6 +19,9 @@ public class Send {
 		
 		channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
 		System.out.println(" [x] Sent '" + message + "'");
+		
+		channel.close();
+		connection.close();
 	}
 }
 

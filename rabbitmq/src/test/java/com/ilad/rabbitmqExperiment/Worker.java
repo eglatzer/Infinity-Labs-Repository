@@ -13,16 +13,18 @@ import com.rabbitmq.client.DefaultConsumer;
 import com.rabbitmq.client.Envelope;
 
 public class Worker {
-	private final static String QUEUE_NAME = "hello";
+	private final static String TASK_QUEUE_NAME = "task_queue";
 
 	public static void main(String[] args) throws java.io.IOException, java.lang.InterruptedException, TimeoutException {
 		ConnectionFactory factory = new ConnectionFactory();
 	    factory.setHost("localhost");
-	    Connection connection = factory.newConnection();
-	    Channel channel = connection.createChannel();
+	    final Connection connection = factory.newConnection();
+	    final Channel channel = connection.createChannel();
 
-	    channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+	    channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);
 	    System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
+	    
+	    channel.basicQos(1);
 	    
 	    final Consumer consumer = new DefaultConsumer(channel) {
 	    	@Override
@@ -32,20 +34,24 @@ public class Worker {
 	    	    System.out.println(" [x] Received '" + message + "'");
 	    	    try {
 	    	    	doWork(message);
-	    	    } catch(InterruptedException e) {
-					e.printStackTrace();
-				} finally {
+	    	    } finally {
 	    	    	System.out.println(" [x] Done");
+	    	    	channel.basicAck(envelope.getDeliveryTag(), false);
 	    	    }
 	    	}
 	    };
-	    channel.basicConsume(QUEUE_NAME, true, consumer);
+	    
+	    channel.basicConsume(TASK_QUEUE_NAME, true, consumer);
 	}
 	
-	private static void doWork(String task) throws InterruptedException {
+	private static void doWork(String task) {
 	    for (char ch: task.toCharArray()) {
 	        if(ch == '.') {
-	        	Thread.sleep(1000);
+	        	try {
+	        		Thread.sleep(1000);
+	        	} catch (InterruptedException _ignored) {
+	        		Thread.currentThread().interrupt();
+	        	}
 	        }
 	    }
 	}
