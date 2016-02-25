@@ -1,0 +1,15 @@
+package com.ilad.datefinder;
+
+import com.ilad.datefinder.DateFinder.Month;
+
+public class MainTest {
+
+	public static void main(String[] args) throws Exception {
+		DateFinder date = new DateFinder(1983, Month.monthName(10), 17);
+		
+		System.out.println("date = " + date);
+		System.out.println("date1.findDay() = " + date.findDay());
+		System.out.println("date1.isLeapYear() = " + date.isLeapYear());
+		System.out.println("date1.isValidDate() = " + date.isValidDate());
+	}
+}
