@@ -4,17 +4,18 @@ public class DateFinder {
 	private int m_year;
 	private Month m_month;
 	private int m_day;
+	private boolean m_isGregorian;
 
 	private static int i;
 	private static int j;
 	private final static int GREG_CALENDAR_CYCLE = 400;
-//	private final static int JULY_CALENDAR_CYCLE = 28;
+	private final static int JULY_CALENDAR_CYCLE = 28;
 	private final static int KINDS_OF_YEAR = 2; // non leap and leap year
 	private final static int NUMBER_OF_MONTHS = 12;
 	private final static int NUMBER_OF_WEEKDAYS = 7;
 	
 	private final static int[] GREG_CODE_OF_YEAR = new int[GREG_CALENDAR_CYCLE];
-//	private final static int[] JULY_CODE_OF_YEAR = new int[JULY_CALENDAR_CYCLE];
+	private final static int[] JULY_CODE_OF_YEAR = new int[JULY_CALENDAR_CYCLE];
 	private final static int[][] DAYS_IN_MONTH =
 			new int[KINDS_OF_YEAR][NUMBER_OF_MONTHS];
 	private final static int[][] CODE_OF_MONTH =
@@ -30,12 +31,12 @@ public class DateFinder {
 		}
 		
 		// initiate JULY_CODE_OF_YEAR LUT
-/*		JULY_CODE_OF_YEAR[0] = 5;
+		JULY_CODE_OF_YEAR[0] = 5;
 		for(i = 1; i < JULY_CALENDAR_CYCLE; ++i) {
 			JULY_CODE_OF_YEAR[i] =
 					(JULY_CODE_OF_YEAR[i - 1] + julyRemainder(i - 1)) %
 					NUMBER_OF_WEEKDAYS;
-		}*/
+		}
 		
 		// initiate DAYS_IN_MONTH LUT
 		for(i = 1; i < 8; ++i) { // initiate January-July except February
@@ -63,30 +64,44 @@ public class DateFinder {
 		}
 	}
 
-	// Constructor
+	// Constructors
+	public DateFinder(int year_, Month month_, int day_, boolean isGregorian_) {
+		m_year = year_;
+		m_month = month_;
+		m_day = day_;
+		m_isGregorian = isGregorian_;
+	}
+	
 	public DateFinder(int year_, Month month_, int day_) {
 		m_year = year_;
 		m_month = month_;
 		m_day = day_;
+		m_isGregorian =
+				(1582 < m_year ||
+				(1582 == m_year &&
+				(Month.NOVEMBER == m_month || Month.DECEMBER == m_month ||
+				(Month.OCTOBER == m_month && 14 < m_day))));
 	}
 	
 	@Override
 	public String toString() {
 		return "[m_year = " + m_year + ", m_month = " + m_month +
-				", m_day = " + m_day + "]";
+				", m_day = " + m_day + ", m_isGregorian = " + m_isGregorian + "]";
 	}
 
 	private static int gregRemainder(int year_) {
 		return (0 == year_ % 400 || (0 == year_ % 4 && 0 != year_ % 100) ? 2 : 1);
 	}
 	
-/*	private static int julyRemainder(int year_) {
+	private static int julyRemainder(int year_) {
 		return (0 == year_ % 4 ? 2 : 1);
 	}
-*/
+
 	public boolean isLeapYear() {
-		return (0 == m_year % 400 || (0 == m_year % 4 && 0 != m_year % 100));
-		// Has to be modified for Julian Celander
+		if(m_isGregorian) {
+			return (2 == gregRemainder(m_year));
+		}
+		return (2 == julyRemainder(m_year));
 	}
 
 	public boolean isValidDate() {
@@ -97,23 +112,29 @@ public class DateFinder {
 		return true;
 	}
 
-	public Day findDay() throws Exception {
-		if(!isValidDate()) {
-			throw new Exception("It's invalid date!");
-		}
+	public Day findDay() {
 		int code = (isLeapYear() ? 1 : 0);
+		int codeOfYear = (m_isGregorian ?
+				GREG_CODE_OF_YEAR[m_year % GREG_CALENDAR_CYCLE] :
+				JULY_CODE_OF_YEAR[m_year % JULY_CALENDAR_CYCLE]);
+		
 		return Day.dayName
-				((GREG_CODE_OF_YEAR[m_year % GREG_CALENDAR_CYCLE] +
+				((codeOfYear +
 				CODE_OF_MONTH[code][m_month.value] + m_day - 1) %
 				NUMBER_OF_WEEKDAYS);
 	}
+	
+	public enum Month {
+		JANUARY(1), FEBRUARY(2), MARCH(3), APRIL(4), MAY(5), JUNE(6), JULY(7),
+		AUGUST(8), SEPTEMBER(9), OCTOBER(10), NOVEMBER(11), DECEMBER(0);
 
-	public void setDate(int year_, Month month_, int day_) {
-		m_year = year_;
-		m_month = month_;
-		m_day = day_;
-	}
+		private int value;
 
+		private Month(int value_) {
+			value = value_;
+		}
+	};
+	
 	public enum Day {
 		SUNDAY(1), MONDAY(2), TUESDAY(3), WEDNESDAY(4), THURSDAY(5), FRIDAY(6),
 		SATURDAY(0);
@@ -127,26 +148,6 @@ public class DateFinder {
 			for(Day d : Day.values()) {
 				if(d.value == value_) {
 					return d;
-				}
-			}
-			return null;
-		}
-	};
-
-	public enum Month {
-		JANUARY(1), FEBRUARY(2), MARCH(3), APRIL(4), MAY(5), JUNE(6), JULY(7),
-		AUGUST(8), SEPTEMBER(9), OCTOBER(10), NOVEMBER(11), DECEMBER(0);
-
-		private int value;
-
-		private Month(int value_) {
-			value = value_;
-		}
-		
-		public static Month monthName(int value_) {
-			for(Month m : Month.values()) {
-				if(m.value == value_) {
-					return m;
 				}
 			}
 			return null;
