@@ -6,4 +6,10 @@
 	<bean id="helloWorld" class="com.ilad.spring.HelloWorld">
 		<property name="message" value="Hello World!"/>
 	</bean>
+	<bean id="singleton" class="com.ilad.spring.HelloWorld"
+		scope="singleton">
+	</bean>
+	<bean id="prototype" class="com.ilad.spring.HelloWorld"
+		scope="prototype">
+	</bean>
 </beans>
