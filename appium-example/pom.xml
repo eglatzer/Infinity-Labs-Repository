@@ -4,7 +4,6 @@
 	<groupId>il.co.topq.auto</groupId>
 	<artifactId>appium-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<dependencies>
 		<dependency>
 			<groupId>io.appium</groupId>
@@ -17,6 +16,5 @@
 			<version>6.9.10</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 </project>

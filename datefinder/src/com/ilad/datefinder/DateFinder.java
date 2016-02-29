@@ -70,11 +70,11 @@ public class DateFinder {
 		return (0 == year_ % 4 ? 2 : 1);
 	}
 	
-	private static boolean isGregCalendar(int year_, Month month_, int day_) {
-		return (1582 < year_ ||
-			   (1582 == year_ &&
-			   (Month.NOVEMBER == month_ || Month.DECEMBER == month_ ||
-			   (Month.OCTOBER == month_ && 14 < day_))));
+	private boolean isGregCalendar() {
+		return (1582 < m_year ||
+			   (1582 == m_year &&
+			   (Month.NOVEMBER == m_month || Month.DECEMBER == m_month ||
+			   (Month.OCTOBER == m_month && 14 < m_day))));
 	}
 
 	// Constructors
@@ -89,7 +89,7 @@ public class DateFinder {
 		m_year = year_;
 		m_month = month_;
 		m_day = day_;
-		m_isGregorian = isGregCalendar(m_year, m_month, m_day);
+		m_isGregorian = isGregCalendar();
 	}
 	
 	// Setters
@@ -104,7 +104,7 @@ public class DateFinder {
 		m_year = year_;
 		m_month = month_;
 		m_day = day_;
-		m_isGregorian = isGregCalendar(m_year, m_month, m_day);
+		m_isGregorian = isGregCalendar();
 	}
 
 	public boolean isLeapYear() {
