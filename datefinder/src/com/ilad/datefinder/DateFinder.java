@@ -123,6 +123,10 @@ public class DateFinder {
 	}
 
 	public Day findDay() {
+		if(!isValidDate()) {
+			return null;
+		}
+		
 		int code = (isLeapYear() ? 1 : 0);
 		int codeOfYear = (m_isGregorian ?
 				GREG_CODE_OF_YEAR[m_year % GREG_CALENDAR_CYCLE] :
@@ -137,8 +141,12 @@ public class DateFinder {
 
 	@Override
 	public String toString() {
-		return "[m_year = " + m_year + ", m_month = " + m_month +
+		String date = "[m_year = " + m_year + ", m_month = " + m_month +
 				", m_day = " + m_day + ", m_isGregorian = " + m_isGregorian + "]";
+		if(!isValidDate()) {
+			date += " It's not a valid date!";
+		}
+		return date;
 	}
 	
 	public enum Month {

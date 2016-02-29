@@ -12,4 +12,14 @@ public class HelloWorld {
 	public String getMessage() {
 		return message;
 	}
+	
+	// initiator
+	public void init() {
+		System.out.println("Bean is going through init.");
+	}
+	
+	// destroyer
+	public void destroy() {
+		System.out.println("Bean will destroy now.");
+	}
 }

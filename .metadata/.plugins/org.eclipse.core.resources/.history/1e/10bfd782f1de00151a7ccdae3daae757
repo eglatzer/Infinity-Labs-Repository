@@ -1,0 +1,15 @@
+package com.ilad.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		ApplicationContext context =
+				new ClassPathXmlApplicationContext("Beans.xml");
+		HelloWorld obj = (HelloWorld)context.getBean("helloWorld");
+		System.out.println("Your Message : " + obj.getMessage());
+	}
+}

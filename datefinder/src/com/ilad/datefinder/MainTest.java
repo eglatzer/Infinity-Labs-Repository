@@ -106,5 +106,90 @@ public class MainTest {
 		System.out.println("date3.findDay() = " + date3.findDay());
 		System.out.println("date3.isLeapYear() = " + date3.isLeapYear());
 		System.out.println("date3.isValidDate() = " + date3.isValidDate());
+		
+		date1.setDate(1500, Month.FEBRUARY, 29);
+		date2.setDate(1500, Month.FEBRUARY, 30);
+		date3.setDate(1500, Month.MARCH, 1);
+		
+		System.out.println("date1 = " + date1);
+		System.out.println("date1.findDay() = " + date1.findDay());
+		System.out.println("date1.isLeapYear() = " + date1.isLeapYear());
+		System.out.println("date1.isValidDate() = " + date1.isValidDate());
+		System.out.println("date2 = " + date2);
+		System.out.println("date2.findDay() = " + date2.findDay());
+		System.out.println("date2.isLeapYear() = " + date2.isLeapYear());
+		System.out.println("date2.isValidDate() = " + date2.isValidDate());
+		System.out.println("date3 = " + date3);
+		System.out.println("date3.findDay() = " + date3.findDay());
+		System.out.println("date3.isLeapYear() = " + date3.isLeapYear());
+		System.out.println("date3.isValidDate() = " + date3.isValidDate());
+		
+		date1.setDate(1600, Month.FEBRUARY, 29);
+		date2.setDate(1600, Month.FEBRUARY, 30);
+		date3.setDate(1600, Month.MARCH, 1);
+		
+		System.out.println("date1 = " + date1);
+		System.out.println("date1.findDay() = " + date1.findDay());
+		System.out.println("date1.isLeapYear() = " + date1.isLeapYear());
+		System.out.println("date1.isValidDate() = " + date1.isValidDate());
+		System.out.println("date2 = " + date2);
+		System.out.println("date2.findDay() = " + date2.findDay());
+		System.out.println("date2.isLeapYear() = " + date2.isLeapYear());
+		System.out.println("date2.isValidDate() = " + date2.isValidDate());
+		System.out.println("date3 = " + date3);
+		System.out.println("date3.findDay() = " + date3.findDay());
+		System.out.println("date3.isLeapYear() = " + date3.isLeapYear());
+		System.out.println("date3.isValidDate() = " + date3.isValidDate());
+		
+		date1.setDate(1600, Month.FEBRUARY, 29, false);
+		date2.setDate(1600, Month.FEBRUARY, 30, false);
+		date3.setDate(1600, Month.MARCH, 1, false);
+		
+		System.out.println("date1 = " + date1);
+		System.out.println("date1.findDay() = " + date1.findDay());
+		System.out.println("date1.isLeapYear() = " + date1.isLeapYear());
+		System.out.println("date1.isValidDate() = " + date1.isValidDate());
+		System.out.println("date2 = " + date2);
+		System.out.println("date2.findDay() = " + date2.findDay());
+		System.out.println("date2.isLeapYear() = " + date2.isLeapYear());
+		System.out.println("date2.isValidDate() = " + date2.isValidDate());
+		System.out.println("date3 = " + date3);
+		System.out.println("date3.findDay() = " + date3.findDay());
+		System.out.println("date3.isLeapYear() = " + date3.isLeapYear());
+		System.out.println("date3.isValidDate() = " + date3.isValidDate());
+		
+		date1.setDate(1700, Month.FEBRUARY, 28);
+		date2.setDate(1700, Month.FEBRUARY, 29);
+		date3.setDate(1700, Month.MARCH, 1);
+		
+		System.out.println("date1 = " + date1);
+		System.out.println("date1.findDay() = " + date1.findDay());
+		System.out.println("date1.isLeapYear() = " + date1.isLeapYear());
+		System.out.println("date1.isValidDate() = " + date1.isValidDate());
+		System.out.println("date2 = " + date2);
+		System.out.println("date2.findDay() = " + date2.findDay());
+		System.out.println("date2.isLeapYear() = " + date2.isLeapYear());
+		System.out.println("date2.isValidDate() = " + date2.isValidDate());
+		System.out.println("date3 = " + date3);
+		System.out.println("date3.findDay() = " + date3.findDay());
+		System.out.println("date3.isLeapYear() = " + date3.isLeapYear());
+		System.out.println("date3.isValidDate() = " + date3.isValidDate());
+		
+		date1.setDate(1700, Month.FEBRUARY, 29, false);
+		date2.setDate(1700, Month.FEBRUARY, 30, false);
+		date3.setDate(1700, Month.MARCH, 1, false);
+		
+		System.out.println("date1 = " + date1);
+		System.out.println("date1.findDay() = " + date1.findDay());
+		System.out.println("date1.isLeapYear() = " + date1.isLeapYear());
+		System.out.println("date1.isValidDate() = " + date1.isValidDate());
+		System.out.println("date2 = " + date2);
+		System.out.println("date2.findDay() = " + date2.findDay());
+		System.out.println("date2.isLeapYear() = " + date2.isLeapYear());
+		System.out.println("date2.isValidDate() = " + date2.isValidDate());
+		System.out.println("date3 = " + date3);
+		System.out.println("date3.findDay() = " + date3.findDay());
+		System.out.println("date3.isLeapYear() = " + date3.isLeapYear());
+		System.out.println("date3.isValidDate() = " + date3.isValidDate());
 	}
 }
