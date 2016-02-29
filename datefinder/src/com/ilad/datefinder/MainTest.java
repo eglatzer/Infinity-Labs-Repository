@@ -22,9 +22,9 @@ public class MainTest {
 		System.out.println("date3.isLeapYear() = " + date3.isLeapYear());
 		System.out.println("date3.isValidDate() = " + date3.isValidDate());
 		
-		date1 = new DateFinder(2015, Month.NOVEMBER, 27);
-		date2 = new DateFinder(2015, Month.NOVEMBER, 27, true);
-		date3 = new DateFinder(2015, Month.NOVEMBER, 27, false);
+		date1.setDate(2015, Month.NOVEMBER, 27);
+		date2.setDate(2015, Month.NOVEMBER, 27, true);
+		date3.setDate(2015, Month.NOVEMBER, 27, false);
 		
 		System.out.println("date1 = " + date1);
 		System.out.println("date1.findDay() = " + date1.findDay());

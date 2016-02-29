@@ -39,11 +39,9 @@ public class DateFinder {
 		}
 		
 		// initiate DAYS_IN_MONTH LUT
-		for(i = 1; i < 8; ++i) { // initiate January-July except February
-			if(i != 2) {
-				DAYS_IN_MONTH[0][i] = 30 + (i % 2);
-				DAYS_IN_MONTH[1][i] = 30 + (i % 2);
-			}
+		for(i = 1; i < 8; ++i) { // initiate January-July
+			DAYS_IN_MONTH[0][i] = 30 + (i % 2);
+			DAYS_IN_MONTH[1][i] = 30 + (i % 2);
 		}
 		for(i = 8; i <= NUMBER_OF_MONTHS; ++i) { // initiate August-December
 			DAYS_IN_MONTH[0][i % NUMBER_OF_MONTHS] = 31 - (i % 2);
@@ -63,6 +61,21 @@ public class DateFinder {
 			}
 		}
 	}
+	
+	private static int gregRemainder(int year_) {
+		return (0 == year_ % 400 || (0 == year_ % 4 && 0 != year_ % 100) ? 2 : 1);
+	}
+	
+	private static int julyRemainder(int year_) {
+		return (0 == year_ % 4 ? 2 : 1);
+	}
+	
+	private static boolean isGregCalendar(int year_, Month month_, int day_) {
+		return (1582 < year_ ||
+			   (1582 == year_ &&
+			   (Month.NOVEMBER == month_ || Month.DECEMBER == month_ ||
+			   (Month.OCTOBER == month_ && 14 < day_))));
+	}
 
 	// Constructors
 	public DateFinder(int year_, Month month_, int day_, boolean isGregorian_) {
@@ -76,25 +89,22 @@ public class DateFinder {
 		m_year = year_;
 		m_month = month_;
 		m_day = day_;
-		m_isGregorian =
-				(1582 < m_year ||
-				(1582 == m_year &&
-				(Month.NOVEMBER == m_month || Month.DECEMBER == m_month ||
-				(Month.OCTOBER == m_month && 14 < m_day))));
+		m_isGregorian = isGregCalendar(m_year, m_month, m_day);
 	}
 	
-	@Override
-	public String toString() {
-		return "[m_year = " + m_year + ", m_month = " + m_month +
-				", m_day = " + m_day + ", m_isGregorian = " + m_isGregorian + "]";
-	}
-
-	private static int gregRemainder(int year_) {
-		return (0 == year_ % 400 || (0 == year_ % 4 && 0 != year_ % 100) ? 2 : 1);
+	// Setters
+	public void setDate(int year_, Month month_, int day_, boolean isGregorian_) {
+		m_year = year_;
+		m_month = month_;
+		m_day = day_;
+		m_isGregorian = isGregorian_;
 	}
 	
-	private static int julyRemainder(int year_) {
-		return (0 == year_ % 4 ? 2 : 1);
+	public void setDate(int year_, Month month_, int day_) {
+		m_year = year_;
+		m_month = month_;
+		m_day = day_;
+		m_isGregorian = isGregCalendar(m_year, m_month, m_day);
 	}
 
 	public boolean isLeapYear() {
@@ -122,6 +132,13 @@ public class DateFinder {
 				((codeOfYear +
 				CODE_OF_MONTH[code][m_month.value] + m_day - 1) %
 				NUMBER_OF_WEEKDAYS);
+	}
+	
+
+	@Override
+	public String toString() {
+		return "[m_year = " + m_year + ", m_month = " + m_month +
+				", m_day = " + m_day + ", m_isGregorian = " + m_isGregorian + "]";
 	}
 	
 	public enum Month {

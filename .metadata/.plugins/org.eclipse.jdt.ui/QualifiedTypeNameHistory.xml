@@ -57,7 +57,7 @@
 <fullyQualifiedTypeName name="com.rabbitmq.client.AMQP"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder.Month"/>
+<fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder"/>
 </qualifiedTypeNameHistroy>
