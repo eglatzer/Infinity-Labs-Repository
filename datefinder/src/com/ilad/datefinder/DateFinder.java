@@ -26,7 +26,7 @@ public class DateFinder {
 		GREG_CODE_OF_YEAR[0] = 0;
 		for(i = 1; i < GREG_CALENDAR_CYCLE; ++i) {
 			GREG_CODE_OF_YEAR[i] =
-					(GREG_CODE_OF_YEAR[i - 1] + gregRemainder(i - 1))
+					(GREG_CODE_OF_YEAR[i - 1] + remainder(i - 1, true))
 					% NUMBER_OF_WEEKDAYS;
 		}
 		
@@ -34,7 +34,7 @@ public class DateFinder {
 		JULY_CODE_OF_YEAR[0] = 5;
 		for(i = 1; i < JULY_CALENDAR_CYCLE; ++i) {
 			JULY_CODE_OF_YEAR[i] =
-					(JULY_CODE_OF_YEAR[i - 1] + julyRemainder(i - 1)) %
+					(JULY_CODE_OF_YEAR[i - 1] + remainder(i - 1, false)) %
 					NUMBER_OF_WEEKDAYS;
 		}
 		
@@ -62,11 +62,11 @@ public class DateFinder {
 		}
 	}
 	
-	private static int gregRemainder(int year_) {
-		return (0 == year_ % 400 || (0 == year_ % 4 && 0 != year_ % 100) ? 2 : 1);
-	}
-	
-	private static int julyRemainder(int year_) {
+	private static int remainder(int year_, boolean isGregorian_) {
+		if(isGregorian_) {
+			return (0 == year_ % 400 || (0 == year_ % 4 && 0 != year_ % 100) ?
+					2 : 1);
+		}
 		return (0 == year_ % 4 ? 2 : 1);
 	}
 	
@@ -75,6 +75,10 @@ public class DateFinder {
 			   (1582 == m_year &&
 			   (Month.NOVEMBER == m_month || Month.DECEMBER == m_month ||
 			   (Month.OCTOBER == m_month && 14 < m_day))));
+	}
+	
+	private int kindOfYear() {
+		return remainder(m_year, m_isGregorian) - 1;
 	}
 
 	// Constructors
@@ -108,15 +112,11 @@ public class DateFinder {
 	}
 
 	public boolean isLeapYear() {
-		if(m_isGregorian) {
-			return (2 == gregRemainder(m_year));
-		}
-		return (2 == julyRemainder(m_year));
+		return (1 == kindOfYear());
 	}
 
 	public boolean isValidDate() {
-		int code = (isLeapYear() ? 1 : 0);
-		if(m_day < 1 || m_day > DAYS_IN_MONTH[code][m_month.value]) {
+		if(m_day < 1 || m_day > DAYS_IN_MONTH[kindOfYear()][m_month.value]) {
 			return false;
 		}
 		return true;
@@ -127,14 +127,13 @@ public class DateFinder {
 			return null;
 		}
 		
-		int code = (isLeapYear() ? 1 : 0);
 		int codeOfYear = (m_isGregorian ?
 				GREG_CODE_OF_YEAR[m_year % GREG_CALENDAR_CYCLE] :
 				JULY_CODE_OF_YEAR[m_year % JULY_CALENDAR_CYCLE]);
 		
 		return Day.dayName
 				((codeOfYear +
-				CODE_OF_MONTH[code][m_month.value] + m_day - 1) %
+				CODE_OF_MONTH[kindOfYear()][m_month.value] + m_day - 1) %
 				NUMBER_OF_WEEKDAYS);
 	}
 	
@@ -169,7 +168,7 @@ public class DateFinder {
 			value = value_;
 		}
 		
-		public static Day dayName(int value_) {
+		private static Day dayName(int value_) {
 			for(Day d : Day.values()) {
 				if(d.value == value_) {
 					return d;

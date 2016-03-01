@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
-<fullyQualifiedTypeName name="java.lang.OutOfMemoryError"/>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
-<fullyQualifiedTypeName name="com.ilad.circularbuffer.ProtectedCircularBuffer"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
 <fullyQualifiedTypeName name="com.ilad.circularbuffer.Producer"/>
 <fullyQualifiedTypeName name="com.ilad.circularbuffer.Consumer"/>
@@ -52,12 +48,16 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.ilad.subsets.SubSets"/>
 <fullyQualifiedTypeName name="com.rabbitmq.client.ConnectionFactory"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.rabbitmq.client.Envelope"/>
 <fullyQualifiedTypeName name="com.rabbitmq.client.AMQP"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder.Month"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.ilad.spring.HelloWorld"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
 </qualifiedTypeNameHistroy>
