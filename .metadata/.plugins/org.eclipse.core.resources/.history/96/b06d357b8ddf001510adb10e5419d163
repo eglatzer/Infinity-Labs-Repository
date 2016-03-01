@@ -1,0 +1,7 @@
+package com.ilad.spring;
+
+public class TextEditorTest {
+	public static void main(String[] args) {
+		
+	}
+}
