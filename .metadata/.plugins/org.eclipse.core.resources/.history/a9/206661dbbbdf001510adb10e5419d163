@@ -1,0 +1,5 @@
+package com.ilad.springBean;
+
+public class HelloWorld {
+
+}

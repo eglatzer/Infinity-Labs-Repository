@@ -135,8 +135,7 @@ public class DateFinder {
 				((codeOfYear +
 				CODE_OF_MONTH[kindOfYear()][m_month.value] + m_day - 1) %
 				NUMBER_OF_WEEKDAYS);
-	}
-	
+	}	
 
 	@Override
 	public String toString() {
