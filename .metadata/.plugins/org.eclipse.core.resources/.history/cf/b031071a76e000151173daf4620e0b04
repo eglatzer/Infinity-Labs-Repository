@@ -1,0 +1,5 @@
+package com.ilad.springAOP;
+
+public class Logging {
+
+}
