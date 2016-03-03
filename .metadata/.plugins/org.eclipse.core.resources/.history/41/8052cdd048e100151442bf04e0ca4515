@@ -1,0 +1,5 @@
+package com.ilad.hello;
+
+public class GreetingController {
+
+}
