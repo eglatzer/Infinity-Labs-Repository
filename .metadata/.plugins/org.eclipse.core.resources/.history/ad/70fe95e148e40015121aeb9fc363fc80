@@ -77,6 +77,23 @@ public class DateFinder {
 			   (10 == m_month.value && 14 < m_day))));
 	}
 	
+	private boolean isGregCalendar(boolean isGregorian_) {
+		if(1582 > m_year ||
+		  (1582 == m_year &&
+		  (10 > m_month.value && 0 < m_month.value ||
+		  (10 == m_month.value && 15 > m_day)))) {
+			return false;
+		}
+		
+		if(1918 < m_year ||
+		  (1918 == m_year &&
+		  (1 < m_month.value || 0 == m_month.value))) {
+			return true;
+		}
+		
+		return isGregorian_;
+	}
+	
 	private int kindOfYear() {
 		return remainder(m_year, m_isGregorian) - 1;
 	}
@@ -86,7 +103,7 @@ public class DateFinder {
 		m_year = year_;
 		m_month = month_;
 		m_day = day_;
-		m_isGregorian = isGregorian_;
+		m_isGregorian = isGregCalendar(isGregorian_);
 	}
 	
 	public DateFinder(int year_, Month month_, int day_) {
@@ -101,7 +118,7 @@ public class DateFinder {
 		m_year = year_;
 		m_month = month_;
 		m_day = day_;
-		m_isGregorian = isGregorian_;
+		m_isGregorian = isGregCalendar(isGregorian_);
 	}
 	
 	public void setDate(int year_, Month month_, int day_) {
