@@ -1,8 +1,0 @@
-package com.ilad.subsets;
-
-public class MainTest {
-
-	public static void main(String[] args) throws Exception {
-		System.out.println(SubSets.subSets(3, 5));
-	}
-}
