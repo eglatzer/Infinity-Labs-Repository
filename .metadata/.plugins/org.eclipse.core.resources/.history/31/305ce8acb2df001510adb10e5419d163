@@ -1,0 +1,9 @@
+package com.ilad.spring;
+
+public class RequiredTest {
+
+	public static void main(String[] args) {
+
+	}
+
+}

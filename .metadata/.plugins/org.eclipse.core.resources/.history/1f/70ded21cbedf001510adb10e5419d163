@@ -1,0 +1,7 @@
+package com.ilad.springBean;
+
+import org.springframework.context.annotation.*;
+
+public class TextEditorConfig {
+
+}

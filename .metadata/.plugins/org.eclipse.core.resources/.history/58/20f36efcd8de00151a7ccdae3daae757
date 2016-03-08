@@ -1,0 +1,17 @@
+package com.ilad.spring;
+
+public class HelloWorld {
+	private String message;
+
+	public HelloWorld(String message_) {
+		message  = message_;
+	}
+	
+	public void setMessage(String message_) {
+		message  = message_;
+	}
+
+	public void getMessage() {
+		System.out.println("Your Message : " + message);
+	}
+}

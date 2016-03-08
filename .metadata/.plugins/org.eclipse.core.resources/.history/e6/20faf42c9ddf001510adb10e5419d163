@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="helloWorld" class="com.ilad.spring.HelloWorld">
+		<property name="message" value="Hello World!"/>
+	</bean>
+	<bean id="singleton" class="com.ilad.spring.HelloWorld"
+		scope="singleton">
+	</bean>
+	<bean id="prototype" class="com.ilad.spring.HelloWorld"
+		scope="prototype">
+	</bean>
+	<!-- Definition for textEditor bean -->
+	<bean id="textEditor" class="com.ilad.spring.TextEditor">
+		<property name="spellChecker">
+			<bean id="spellChecker" class="com.ilad.spring.SpellChecker"/>
+		</property>
+	</bean>
+</beans>

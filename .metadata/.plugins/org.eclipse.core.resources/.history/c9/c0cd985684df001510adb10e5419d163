@@ -1,0 +1,15 @@
+package com.ilad.spring;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class PostProcessorTest {
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		AbstractApplicationContext context =
+				new ClassPathXmlApplicationContext("Beans.xml");
+		HelloWorld obj = (HelloWorld)context.getBean("helloWorld");
+		System.out.println(obj.getMessage());
+		context.registerShutdownHook();
+	}
+}

@@ -1,0 +1,16 @@
+package com.ilad.spring;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class InitAndDestroyTest {
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		AbstractApplicationContext context =
+				new ClassPathXmlApplicationContext("Beans.xml");
+
+		HelloWorld obj = (HelloWorld)context.getBean("initanddestroy");
+		System.out.println("Your Message : " + obj.getMessage());
+		context.registerShutdownHook();
+	   }
+}

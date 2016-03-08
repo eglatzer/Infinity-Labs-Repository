@@ -9,6 +9,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="springrest"/>
+			<item value="springboot"/>
+			<item value="spring"/>
 			<item value="rabbitmq"/>
 			<item value="log4j"/>
 		</list>
@@ -77,6 +80,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/infinity/git/Infinity-Labs-Repository/hanoitower"/>
+			<item value="/home/infinity/git/Infinity-Labs-Repository/zeromatrix"/>
 			<item value="/home/infinity/git/Infinity-Labs-Repository/Log4j"/>
 			<item value="/home/infinity/git/Infinity-Labs-Repository/Labs"/>
 			<item value="/home/developer/git/Infinity-Labs-Repository/sugarcrm"/>

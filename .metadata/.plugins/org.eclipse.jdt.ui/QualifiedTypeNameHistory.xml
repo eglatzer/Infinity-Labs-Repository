@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="java.lang.OutOfMemoryError"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
@@ -7,6 +8,8 @@
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
 <fullyQualifiedTypeName name="com.ilad.circularbuffer.Producer"/>
 <fullyQualifiedTypeName name="com.ilad.circularbuffer.Consumer"/>
+=======
+>>>>>>> a49a2a98eb7c566433bc60b4fe104d4d8414445e
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="com.ilad.circularbuffer.CircularBuffer"/>
 <fullyQualifiedTypeName name="java.util.concurrent.Semaphore"/>
@@ -26,7 +29,6 @@
 <fullyQualifiedTypeName name="com.ilad.sorting.GenericArray"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.Float"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="com.ilad.heap.Heap"/>
@@ -52,12 +54,26 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.ilad.subsets.SubSets"/>
 <fullyQualifiedTypeName name="com.rabbitmq.client.ConnectionFactory"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.rabbitmq.client.Envelope"/>
 <fullyQualifiedTypeName name="com.rabbitmq.client.AMQP"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder.Month"/>
+=======
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.ilad.spring.HelloWorld"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.beans.BeansException"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder.Month"/>
+<fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Required"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+>>>>>>> a49a2a98eb7c566433bc60b4fe104d4d8414445e
 </qualifiedTypeNameHistroy>

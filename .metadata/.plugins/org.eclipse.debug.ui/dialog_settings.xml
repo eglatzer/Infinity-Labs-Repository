@@ -21,6 +21,12 @@
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
 		<item value="297" key="DIALOG_WIDTH"/>
 		<item value="439" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
+=======
+	</section>
+	<section name="org.eclipse.debug.ui.SINGLE_LAUNCH_CONFIGURATION_DIALOG_SECTION">
+		<item value="677" key="DIALOG_WIDTH"/>
+>>>>>>> a49a2a98eb7c566433bc60b4fe104d4d8414445e
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

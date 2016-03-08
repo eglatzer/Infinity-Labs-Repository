@@ -1,0 +1,11 @@
+package com.ilad.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class RequiredTest {
+
+	public static void main(String[] args) {
+
+	}
+}

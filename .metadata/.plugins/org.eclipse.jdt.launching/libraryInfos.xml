@@ -19,6 +19,7 @@
 <entry path="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<<<<<<< HEAD
 <libraryInfo home="/usr/lib/jvm/java-7-openjdk-amd64" version="1.7.0_85">
 <bootpath>
 <entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar"/>
@@ -40,6 +41,9 @@
 </endorsedDirs>
 </libraryInfo>
 <libraryInfo home="/usr/lib/jvm/java-8-oracle/jre" version="1.8.0_66">
+=======
+<libraryInfo home="/usr/lib/jvm/java-8-oracle" version="1.8.0_74">
+>>>>>>> a49a2a98eb7c566433bc60b4fe104d4d8414445e
 <bootpath>
 <entry path="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar"/>
 <entry path="/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar"/>
