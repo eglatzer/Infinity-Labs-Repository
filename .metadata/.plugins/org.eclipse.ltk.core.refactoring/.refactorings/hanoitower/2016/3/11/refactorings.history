@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.ilad.hanoitower&apos; to &apos;hanoi/src&apos;&#x0A;- Original project: &apos;hanoitower&apos;&#x0A;- Destination element: &apos;hanoi/src&apos;&#x0A;- Original element: &apos;hanoitower/src/com.ilad.hanoitower&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=hanoi/src" element1="/src&lt;com.ilad.hanoitower" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1457473841060" version="1.0"/>
+</session>
