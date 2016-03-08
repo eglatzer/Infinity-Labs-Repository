@@ -1,9 +1,0 @@
-package com.ilad.manipulatetree;
-
-public class Tree {
-	private TreeNode root;
-	
-	private class TreeNode {
-		
-	}
-}
