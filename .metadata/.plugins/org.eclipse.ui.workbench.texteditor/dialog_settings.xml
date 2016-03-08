@@ -6,30 +6,30 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="System" key="selection"/>
+		<item value="KINDS_OF_YEAR" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="kinds_of_years"/>
+			<item value="codeofmonth"/>
+			<item value="daysinmonth"/>
+			<item value="argv"/>
 			<item value="System"/>
 			<item value="sum"/>
 			<item value="lastIndex"/>
 			<item value="index"/>
-			<item value="(p)"/>
-			<item value="rightIndex"/>
-			<item value="leftIndex"/>
-			<item value="j"/>
 		</list>
 		<list key="replacehistory">
+			<item value="KINDS_OF_YEAR"/>
+			<item value="CODE_OF_MONTH"/>
+			<item value="DAYS_IN_MONTH"/>
+			<item value="args"/>
 			<item value="count"/>
 			<item value="index"/>
 			<item value="lastIndex"/>
 			<item value="(array[pivot])"/>
-			<item value="j"/>
-			<item value="i"/>
-			<item value="rightIndex"/>
-			<item value="leftIndex "/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
