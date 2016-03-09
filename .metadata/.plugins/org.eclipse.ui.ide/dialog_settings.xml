@@ -5,9 +5,9 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/evyatar/git/Infinity-Labs-Repository/selenium"/>
 			<item value="/home/evyatar/My_Files/Java/selenium"/>
 			<item value="/home/evyatar/git/Infinity-Labs-Repository/first-selenium"/>
-			<item value="/home/evyatar/git/Infinity-Labs-Repository/selenium"/>
 			<item value="/home/infinity/git/Infinity-Labs-Repository/zeromatrix"/>
 			<item value="/home/infinity/git/Infinity-Labs-Repository/sugarcrmpageobjected"/>
 			<item value="/home/infinity/git/Infinity-Labs-Repository/sugarcrmmavenflat"/>
