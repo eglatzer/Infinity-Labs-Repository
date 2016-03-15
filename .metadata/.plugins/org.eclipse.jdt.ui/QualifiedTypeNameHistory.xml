@@ -56,8 +56,8 @@
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder.Month"/>
 <fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Required"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="com.ilad.datefinder.DateFinder.Month"/>
 </qualifiedTypeNameHistroy>

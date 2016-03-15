@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="springboot-0.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/springboot/target/springboot-0.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

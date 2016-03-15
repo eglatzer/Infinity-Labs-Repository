@@ -1,8 +1,6 @@
 package com;
 
-import java.io.File;
-import java.net.URL;
-
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
@@ -10,7 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.appium.java_client.android.AndroidDriver;
+import java.io.File;
+import java.net.URL;
 
 public class TestSimpleNotes {
 
