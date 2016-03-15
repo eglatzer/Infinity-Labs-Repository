@@ -6,20 +6,32 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
+		<item value="KINDS_OF_YEAR" key="selection"/>
+=======
 		<item value="value" key="selection"/>
+>>>>>>> a49a2a98eb7c566433bc60b4fe104d4d8414445e
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
+=======
 			<item value="value"/>
 			<item value="dayName"/>
+>>>>>>> a49a2a98eb7c566433bc60b4fe104d4d8414445e
 			<item value="kinds_of_years"/>
 			<item value="codeofmonth"/>
 			<item value="daysinmonth"/>
 			<item value="argv"/>
 			<item value="System"/>
 			<item value="sum"/>
+<<<<<<< HEAD
+			<item value="lastIndex"/>
+			<item value="index"/>
+=======
+>>>>>>> a49a2a98eb7c566433bc60b4fe104d4d8414445e
 		</list>
 		<list key="replacehistory">
 			<item value="KINDS_OF_YEAR"/>

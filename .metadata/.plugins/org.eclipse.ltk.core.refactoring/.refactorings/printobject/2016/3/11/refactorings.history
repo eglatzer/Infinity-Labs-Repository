@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.ilad.printobject&apos; to &apos;Printobject/src&apos;&#x0A;- Original project: &apos;printobject&apos;&#x0A;- Destination element: &apos;Printobject/src&apos;&#x0A;- Original element: &apos;printobject/src/com.ilad.printobject&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=Printobject/src" element1="/src&lt;com.ilad.printobject" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1457474558663" version="1.0"/>
+</session>

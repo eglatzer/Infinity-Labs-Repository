@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="CleanDialogSettings">
-		<item value="563" key="DIALOG_WIDTH"/>
-		<item value="false" key="TOGGLE_SELECTED"/>
-		<item value="387" key="DIALOG_HEIGHT"/>
-		<item value="696" key="DIALOG_X_ORIGIN"/>
-		<item value="293" key="DIALOG_Y_ORIGIN"/>
-	</section>
 	<section name="ExternalProjectImportWizard">
-		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/evyatar/git/Infinity-Labs-Repository/selenium"/>
+			<item value="/home/evyatar/My_Files/Java/selenium"/>
+			<item value="/home/evyatar/git/Infinity-Labs-Repository/first-selenium"/>
 			<item value="/home/infinity/git/Infinity-Labs-Repository/zeromatrix"/>
 			<item value="/home/infinity/git/Infinity-Labs-Repository/sugarcrmpageobjected"/>
 			<item value="/home/infinity/git/Infinity-Labs-Repository/sugarcrmmavenflat"/>
@@ -31,5 +27,12 @@
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.m2e"/>
 		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="563" key="DIALOG_WIDTH"/>
+		<item value="293" key="DIALOG_Y_ORIGIN"/>
+		<item value="696" key="DIALOG_X_ORIGIN"/>
+		<item value="387" key="DIALOG_HEIGHT"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
 	</section>
 </section>

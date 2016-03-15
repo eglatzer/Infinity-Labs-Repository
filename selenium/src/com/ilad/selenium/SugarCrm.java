@@ -2,67 +2,59 @@ package com.ilad.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 public class SugarCrm {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver",
-			"/home/developer/Desktop/chromedriver");
-		WebDriver driver = new ChromeDriver();
-		final String userName = "admin";
-		final String password = "ct,h kvmkhj";
+		WebDriver driver = new FirefoxDriver();
 		final String firstName = "Evyatar";
 		final String lastName = "Glatzer";
-		final String salutation = "Dr.";
+		final String userName = "eglatzer";
+		final String password = "dmhdmh";
 
-		driver.navigate().to("http://localhost/sugar/");
+		driver.get("localhost:8080");
         
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("login_button")));
-		
-		driver.findElement(By.id("user_name")).sendKeys(userName);
-		driver.findElement(By.id("user_password")).sendKeys(password);
- 		driver.findElement(By.id("login_button")).click();
+		Thread.sleep(3000);
+        
+		driver.findElement(By.className("btn-link")).click();
  		
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("grouptab_0")));
-        
-        driver.findElement(By.id("grouptab_0")).click();
-        driver.findElement(By.id("moduleTab_0_Leads")).click();
-        
-		wait.until(ExpectedConditions.elementToBeClickable
-			(By.xpath("//span[contains(.,'Create Lead')]/a")));
-        
-        driver.findElement(By.xpath("//span[contains(.,'Create Lead')]/a")).
-        	click();
-        driver.findElement(By.id("first_name")).sendKeys(firstName);
-		driver.findElement(By.id("last_name")).sendKeys(lastName);
+		Thread.sleep(3000);
 		
-		org.openqa.selenium.support.ui.Select select =
-			new org.openqa.selenium.support.ui.Select
-			(driver.findElement(By.id("salutation")));
-		select.selectByValue(salutation);
-		driver.findElement(By.id("alt_checkbox")).click();
-		driver.findElement(By.id("SAVE_FOOTER")).click();
+		driver.findElement(By.id("firstName")).sendKeys(firstName);
+		driver.findElement(By.name("lastName")).sendKeys(lastName);
+		driver.findElement(By.id("username")).sendKeys(userName);
+		driver.findElement(By.id("password")).sendKeys(password);
+
+		Thread.sleep(3000);
 		
-		wait.until(ExpectedConditions.elementToBeClickable
-			(By.id("moduleTab_0_Leads")));
+		driver.findElement(By.className("btn-primary")).click();
+
+		Thread.sleep(3000);
 		
-		driver.findElement(By.id("moduleTab_0_Leads")).click();
+		Assert.assertTrue(driver.findElement(By.className("alert-success")).getText().equals("Registration successful"));
+				
+		driver.findElement(By.id("username")).sendKeys(userName);
+		driver.findElement(By.id("password")).sendKeys(password);
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated
-			(By.id("search_form_clear")));
+		Thread.sleep(3000);
 		
-		driver.findElement(By.id("search_form_clear")).click();
-		driver.findElement(By.id("search_name_basic")).sendKeys(lastName);
-		driver.findElement(By.id("search_form_submit")).click();
+		driver.findElement(By.className("btn-primary")).click();
+				
+		Thread.sleep(3000);
 		
-		Assert.assertTrue(driver.findElement(By.xpath("//*[contains(., 'Dr. Evyatar Glatzer')]/a")) != null);
+		Assert.assertTrue(driver.findElement(By.cssSelector("p.ng-scope")).getText().equals("You're logged in!!"));
 		
-		Thread.sleep(5000);
+		driver.findElement(By.xpath("//*[contains(., 'eglatzer')]/a")).click();
 		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.className("btn-primary")).click();
+		
+		Thread.sleep(3000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().equals("http://localhost:8080/#/login"));
+				
 		driver.quit();
 	}
 }

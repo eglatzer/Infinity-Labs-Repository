@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.ilad.pair&apos; to &apos;Pair/src&apos;&#x0A;- Original project: &apos;pair&apos;&#x0A;- Destination element: &apos;Pair/src&apos;&#x0A;- Original element: &apos;pair/src/com.ilad.pair&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=Pair/src" element1="/src&lt;com.ilad.pair" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1457474453432" version="1.0"/>
+</session>

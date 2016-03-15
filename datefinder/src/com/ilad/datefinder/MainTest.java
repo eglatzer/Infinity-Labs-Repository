@@ -4,7 +4,7 @@ import com.ilad.datefinder.DateFinder.Month;
 
 public class MainTest {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		DateFinder date1 = new DateFinder(1983, Month.OCTOBER, 17);
 		DateFinder date2 = new DateFinder(1983, Month.OCTOBER, 17, true);
 		DateFinder date3 = new DateFinder(1983, Month.OCTOBER, 17, false);

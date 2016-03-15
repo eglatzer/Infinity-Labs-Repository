@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.ilad.singlylinkedlist&apos; to &apos;Singlylinkedlist/src&apos;&#x0A;- Original project: &apos;singlylinkedlist&apos;&#x0A;- Destination element: &apos;Singlylinkedlist/src&apos;&#x0A;- Original element: &apos;singlylinkedlist/src/com.ilad.singlylinkedlist&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=Singlylinkedlist/src" element1="/src&lt;com.ilad.singlylinkedlist" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1457475100640" version="1.0"/>
+</session>

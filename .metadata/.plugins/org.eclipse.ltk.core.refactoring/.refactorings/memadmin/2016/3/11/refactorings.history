@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.ilad.memadmin&apos; to &apos;Memadmin/src&apos;&#x0A;- Original project: &apos;memadmin&apos;&#x0A;- Destination element: &apos;Memadmin/src&apos;&#x0A;- Original element: &apos;memadmin/src/com.ilad.memadmin&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=Memadmin/src" element1="/src&lt;com.ilad.memadmin" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1457474336123" version="1.0"/>
+</session>

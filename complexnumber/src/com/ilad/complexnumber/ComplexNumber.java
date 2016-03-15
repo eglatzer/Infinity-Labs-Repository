@@ -4,26 +4,26 @@ public class ComplexNumber {
 	private double m_real;
 	private double m_imagine;
 	
-	public ComplexNumber(){
+	public ComplexNumber() {
 		
 	}
 	
-	public ComplexNumber(double real_){
+	public ComplexNumber(double real_) {
 		this(real_, 0);
 	}
 	
-	public ComplexNumber(double real_, double imaginary_){
+	public ComplexNumber(double real_, double imaginary_) {
 		m_real = real_;
 		m_imagine = imaginary_;
 	}
 	
-	public ComplexNumber(ComplexNumber other_){
+	public ComplexNumber(ComplexNumber other_) {
 		assert(null != other_);
 		m_real = other_.m_real;
 		m_imagine = other_.m_imagine;
 	}
 	
-	public double getReal(){
+	public double getReal() {
 		return m_real;
 	}
 	
@@ -32,7 +32,7 @@ public class ComplexNumber {
 		return this;
 	}
 	
-	public double getImaginary(){
+	public double getImaginary() {
 		return m_imagine;
 	}
 	
@@ -57,19 +57,22 @@ public class ComplexNumber {
 	
 	public ComplexNumber add(ComplexNumber other_) {
 		assert(null != other_);
-		return new ComplexNumber(m_real + other_.m_real, m_imagine + other_.m_imagine);
+		return new ComplexNumber(m_real + other_.m_real,
+								 m_imagine + other_.m_imagine);
 	}
 	
 	public ComplexNumber subtract(ComplexNumber other_) {
 		assert(null != other_);
-		return new ComplexNumber(m_real - other_.m_real, m_imagine - other_.m_imagine);
+		return new ComplexNumber(m_real - other_.m_real,
+								 m_imagine - other_.m_imagine);
 	}
 	
 	public ComplexNumber multiply(ComplexNumber other_) {
 		assert(null != other_);
 		ComplexNumber newNumber = new ComplexNumber();
 		newNumber.setReal(m_real * other_.m_real - m_imagine * other_.m_imagine);
-		newNumber.setImagine(m_imagine * other_.m_real + m_real * other_.m_imagine);
+		newNumber.setImagine(m_imagine * other_.m_real +
+							 m_real * other_.m_imagine);
 		return newNumber;
 	}
 	
@@ -77,9 +80,12 @@ public class ComplexNumber {
 		assert(null != other_);
 		ComplexNumber newNumber = new ComplexNumber();
 		newNumber.setReal((m_real * other_.m_real + m_imagine * other_.m_imagine) /
-						  (this.square(other_.m_real) + this.square(other_.m_imagine)));
-		newNumber.setImagine((m_imagine * other_.m_real - m_real * other_.m_imagine) /
-				  			 (this.square(other_.m_real) + this.square(other_.m_imagine)));
+						  (this.square(other_.m_real) +
+						   this.square(other_.m_imagine)));
+		newNumber.setImagine((m_imagine * other_.m_real -
+							  m_real * other_.m_imagine) /
+				  			 (this.square(other_.m_real) +
+				  			  this.square(other_.m_imagine)));
 		return newNumber;
 	}
 	
@@ -109,9 +115,11 @@ public class ComplexNumber {
 		if (getClass() != obj.getClass())
 			return false;
 		ComplexNumber other = (ComplexNumber) obj;
-		if (Double.doubleToLongBits(m_imagine) != Double.doubleToLongBits(other.m_imagine))
+		if (Double.doubleToLongBits(m_imagine) !=
+			Double.doubleToLongBits(other.m_imagine))
 			return false;
-		if (Double.doubleToLongBits(m_real) != Double.doubleToLongBits(other.m_real))
+		if (Double.doubleToLongBits(m_real) !=
+			Double.doubleToLongBits(other.m_real))
 			return false;
 		return true;
 	}
