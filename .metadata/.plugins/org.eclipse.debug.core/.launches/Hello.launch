@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<<<<<<< HEAD
 <listEntry value="/labs/src/com/ilad/labs/Hello.java"/>
+=======
+<listEntry value="/Labs/src/com/ilad/Labs/Hello.java"/>
+>>>>>>> 1567e073017c61b75c1c4c94d4467dcbcb26cd4f
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
+<<<<<<< HEAD
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ilad.labs.Hello"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="labs"/>
+=======
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ilad.Labs.Hello"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Labs"/>
+>>>>>>> 1567e073017c61b75c1c4c94d4467dcbcb26cd4f
 </launchConfiguration>

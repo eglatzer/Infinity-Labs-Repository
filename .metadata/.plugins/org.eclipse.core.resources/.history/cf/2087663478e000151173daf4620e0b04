@@ -1,7 +1,0 @@
-package com.ilad.springAOP;
-
-public class MainTest {
-	public static void main(String[] args) {
-
-	}
-}

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<<<<<<< HEAD
+<listEntry value="/Labs/src/com/ilad/Labs/MainTest.java"/>
+=======
 <listEntry value="/randomtest/src/com/ilad/randomtest/MainTest.java"/>
+>>>>>>> d1259deebfa2ff6b0f6d5590d4f720de383532c4
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
+<<<<<<< HEAD
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ilad.Labs.MainTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Labs"/>
+=======
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ilad.randomtest.MainTest"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="randomtest"/>
+>>>>>>> d1259deebfa2ff6b0f6d5590d4f720de383532c4
 </launchConfiguration>
