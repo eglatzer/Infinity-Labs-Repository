@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
@@ -29,6 +30,9 @@
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
 	</section>
+=======
+	<item value="/home/evyatar/git/Infinity-Labs-Repository/selenium/lib/first-selenium/lib" key="org.eclipse.jdt.ui.lastextjar"/>
+>>>>>>> b487c3b30cbec2cbdb148febe737d4e60f51fc44
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
