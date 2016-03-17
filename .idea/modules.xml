@@ -3,14 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Infinity-Labs-Repository.iml" filepath="$PROJECT_DIR$/Infinity-Labs-Repository.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Labs/Labs.iml" filepath="$PROJECT_DIR$/Labs/Labs.iml" />
       <module fileurl="file://$PROJECT_DIR$/complexnumber/complexnumber.iml" filepath="$PROJECT_DIR$/complexnumber/complexnumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/datefinder/datefinder.iml" filepath="$PROJECT_DIR$/datefinder/datefinder.iml" />
       <module fileurl="file://$PROJECT_DIR$/findnumberinarray/findnumberinarray.iml" filepath="$PROJECT_DIR$/findnumberinarray/findnumberinarray.iml" />
       <module fileurl="file://$PROJECT_DIR$/gradescount/gradescount.iml" filepath="$PROJECT_DIR$/gradescount/gradescount.iml" />
       <module fileurl="file://$PROJECT_DIR$/hanoitower/hanoitower.iml" filepath="$PROJECT_DIR$/hanoitower/hanoitower.iml" />
       <module fileurl="file://$PROJECT_DIR$/heap/heap.iml" filepath="$PROJECT_DIR$/heap/heap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/topqteamworkweb/src/main/main.iml" filepath="$PROJECT_DIR$/topqteamworkweb/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/topqteamworkandroid/src/main/main1.iml" filepath="$PROJECT_DIR$/topqteamworkandroid/src/main/main1.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculator/src/main/main2.iml" filepath="$PROJECT_DIR$/calculator/src/main/main2.iml" />
